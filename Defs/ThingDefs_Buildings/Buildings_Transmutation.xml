@@ -3,7 +3,7 @@
   <ThingDef ParentName="BenchBase">
     <defName>TableTransmutation</defName>
     <label>transmutation table</label>
-    <description>A table created thanks to knowledge of Alchemy. It has the ability to transmute materials into different ones.</description>
+    <description>A table created thanks to knowledge of Alchemy. It has the ability to transmute raw resources into different ones.</description>
     <thingClass>Building_WorkTable</thingClass>
     <graphicData>
       <texPath>Things/Building/Production/TableTransmutation</texPath>
@@ -32,6 +32,64 @@
     <fillPercent>0.5</fillPercent>
     <useHitPoints>True</useHitPoints>
     <statBases>
+      <WorkToBuild>2000</WorkToBuild>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <size>(3,1)</size>
+    <designationCategory>Production</designationCategory>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>DarkmatterAlchemy</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BenchBase">
+    <defName>TableDarkMatter</defName>
+    <label>dark matter transmutation table</label>
+    <description>Made from fusing dark matter to a transmutation table, it has the ability to create anti-matter.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Production/TableDarkMatter</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,1)</drawSize>
+      <shadowData>
+        <volume>(2.4, 1, 0.8)</volume>
+      </shadowData>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <defaultStuff>BlocksGranite</defaultStuff>
+    <costStuffCount>90</costStuffCount>
+    <costList>
+      <Steel>90</Steel>
+      <DarkMatter>90</DarkMatter>
+    </costList>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
       <WorkToBuild>340</WorkToBuild>
       <MaxHitPoints>1600</MaxHitPoints>
       <Flammability>1.0</Flammability>
@@ -53,7 +111,7 @@
       <li>PlaceWorker_PreventInteractionSpotOverlap</li>
     </placeWorkers>
     <researchPrerequisites>
-      <li>DarkmatterAlchemy</li>
+      <li>AntimatterAlchemy</li>
     </researchPrerequisites>
   </ThingDef>
 
@@ -96,9 +154,72 @@
       <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
     </building>
     <costList>
-      <Steel>45</Steel>
-      <ComponentIndustrial>1</ComponentIndustrial>
+      <Steel>70</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
       <DarkMatter>70</DarkMatter>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Battery">
+        <storedEnergyMax>5300</storedEnergyMax>
+        <efficiency>4.5</efficiency>
+        <shortCircuitInRain>false</shortCircuitInRain>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <designationCategory>Power</designationCategory>
+    <staticSunShadowHeight>0.2</staticSunShadowHeight>
+    <constructEffect>ConstructMetal</constructEffect>
+    <designationHotKey>Misc4</designationHotKey>
+    <canOverlapZones>false</canOverlapZones>
+    <researchPrerequisites>
+      <li>DarkmatterRelaying</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>AntimatterRelay</defName>
+    <label>anti-matter relay</label>
+    <description>A battery fused with anti-matter in order to give an incredibly huge improvement to its efficiency and storage capabilities.</description>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <thingClass>Building_Battery</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Power/DarkmatterRelay</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,3)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.40</fillPercent>
+    <tickerType>Normal</tickerType>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsPower</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>7060</MaxHitPoints>
+      <WorkToBuild>10</WorkToBuild>
+      <Mass>20</Mass>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <size>(1,2)</size>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+    </building>
+    <costList>
+      <Steel>70</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <AntiMatter>70</AntiMatter>
     </costList>
     <comps>
       <li Class="CompProperties_Battery">
@@ -156,9 +277,9 @@
       <destroySound>BuildingDestroyed_Metal_Big</destroySound>
     </building>
     <costList>
-      <DarkMatter>75</DarkMatter>
-      <Steel>75</Steel>
-      <ComponentIndustrial>1</ComponentIndustrial>
+      <DarkMatter>100</DarkMatter>
+      <Steel>100</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
     </costList>
     <comps>
       <li Class="CompProperties_Power">

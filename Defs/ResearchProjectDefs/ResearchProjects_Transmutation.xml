@@ -55,6 +55,12 @@
     <prerequisites>
       <li>DarkmatterAlchemy</li>
     </prerequisites>
+    <techprintCount>1</techprintCount>
+    <techprintCommonality>0</techprintCommonality>
+    <techprintMarketValue>0</techprintMarketValue>
+    <heldByFactionCategoryTags>
+      <li>Unknown</li>
+    </heldByFactionCategoryTags>
   </ResearchProjectDef>
 
   <ResearchProjectDef>

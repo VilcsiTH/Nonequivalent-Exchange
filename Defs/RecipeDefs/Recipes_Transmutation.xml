@@ -7,6 +7,7 @@
     <workAmount>75</workAmount>
     <recipeUsers>
       <li>TableTransmutation</li>
+      <li>TableDarkMatter</li>
     </recipeUsers>
     <ingredients>
       <li>
@@ -26,6 +27,32 @@
     <workSkill>Crafting</workSkill>
   </RecipeDef>
 
+  <RecipeDef Name="AntiBase" Abstract="True">
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <workAmount>300</workAmount>
+    <recipeUsers>
+      <li>TableDarkMatter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AntiMatter</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AntiMatter</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
   <RecipeDef>
     <defName>Transmute_DarkMatter</defName>
     <label>transmute dark matter</label>
@@ -38,6 +65,7 @@
     <workAmount>75</workAmount>
     <recipeUsers>
       <li>TableTransmutation</li>
+      <li>TableDarkMatter</li>
     </recipeUsers>
     <ingredients>
       <li>
@@ -55,6 +83,7 @@
       </categories>
       <disallowedThingDefs>
         <li>DarkMatter</li>
+        <li>AntiMatter</li>
       </disallowedThingDefs>
     </fixedIngredientFilter>
     <products>
@@ -75,6 +104,7 @@
     <workAmount>75</workAmount>
     <recipeUsers>
       <li>TableTransmutation</li>
+      <li>TableDarkMatter</li>
     </recipeUsers>
     <ingredients>
       <li>
@@ -92,10 +122,79 @@
       </categories>
       <disallowedThingDefs>
         <li>DarkMatter</li>
+        <li>AntiMatter</li>
       </disallowedThingDefs>
     </fixedIngredientFilter>
     <products>
       <DarkMatter>75</DarkMatter>
+    </products>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Transmute_AntiMatter</defName>
+    <label>transmute anti-matter</label>
+    <description>Transmute dark matter into anti-matter.</description>
+    <jobString>Transmuting anti-matter.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>300</workAmount>
+    <recipeUsers>
+      <li>TableDarkMatter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>DarkMatter</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>DarkMatter</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <AntiMatter>1</AntiMatter>
+    </products>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Transmute_AntiMatterBulk</defName>
+    <label>transmute anti-matter x75</label>
+    <description>Transmute dark matter into anti-matter.</description>
+    <jobString>Transmuting anti-matter.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>300</workAmount>
+    <recipeUsers>
+      <li>TableDarkMatter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>DarkMatter</li>
+          </thingDefs>
+        </filter>
+        <count>5625</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>DarkMatter</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <AntiMatter>75</AntiMatter>
     </products>
     <workSkill>Crafting</workSkill>
   </RecipeDef>
@@ -258,5 +357,49 @@
     <products>
       <SmokeleafLeaves>75</SmokeleafLeaves>
     </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AntiBase">
+    <defName>Transmute_Alpaca</defName>
+    <label>transmute alpaca wool x75</label>
+    <description>Transmute anti-matter into alpaca wool.</description>
+    <jobString>Transmuting alpaca wool.</jobString>
+    <products>
+      <FabricAlpaca>75</FabricAlpaca>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Transmute_Investigation</defName>
+    <label>experiment with dark matter</label>
+    <description>Learn more about dark matter's properties from experimenting.</description>
+    <jobString>Experimenting with dark matter.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>300</workAmount>
+    <recipeUsers>
+      <li>TableTransmutation</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <ThingDefs>
+            <li>DarkMatter</li>
+          </ThingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <ThingDefs>
+        <li>DarkMatter</li>
+      </ThingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Techprint_AntimatterAlchemy>1</Techprint_AntimatterAlchemy>
+    </products>
+    <workSkill>Crafting</workSkill>
   </RecipeDef>
 </Defs>
