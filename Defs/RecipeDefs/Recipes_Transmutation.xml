@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <RecipeDef Name="TransmuteBase" Abstract="True">
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <workAmount>75</workAmount>
+    <recipeUsers>
+      <li>TableTransmutation</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>DarkMatter</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>DarkMatter</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Transmute_DarkMatter</defName>
+    <label>transmute dark matter</label>
+    <description>Transmute raw resources into dark matter.</description>
+    <jobString>Transmuting dark matter.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>75</workAmount>
+    <recipeUsers>
+      <li>TableTransmutation</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>ResourcesRaw</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>ResourcesRaw</li>
+      </categories>
+      <disallowedThingDefs>
+        <li>DarkMatter</li>
+      </disallowedThingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <DarkMatter>1</DarkMatter>
+    </products>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Transmute_DarkMatterBulk</defName>
+    <label>transmute dark matter x75</label>
+    <description>Transmute raw resources into dark matter.</description>
+    <jobString>Transmuting dark matter.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>75</workAmount>
+    <recipeUsers>
+      <li>TableTransmutation</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>ResourcesRaw</li>
+          </categories>
+        </filter>
+        <count>75</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>ResourcesRaw</li>
+      </categories>
+      <disallowedThingDefs>
+        <li>DarkMatter</li>
+      </disallowedThingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <DarkMatter>75</DarkMatter>
+    </products>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteBase">
+    <defName>Transmute_Wood</defName>
+    <label>transmute wood x75</label>
+    <description>Transmute dark matter into wood logs.</description>
+    <jobString>Transmuting wood.</jobString>
+    <products>
+      <WoodLog>75</WoodLog>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteBase">
+    <defName>Transmute_Uranium</defName>
+    <label>transmute uranium x75</label>
+    <description>Transmute dark matter into uranium.</description>
+    <jobString>Transmuting uranium.</jobString>
+    <products>
+      <Uranium>75</Uranium>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteBase">
+    <defName>Transmute_Steel</defName>
+    <label>transmute steel x75</label>
+    <description>Transmute dark matter into steel.</description>
+    <jobString>Transmuting steel.</jobString>
+    <products>
+      <Steel>75</Steel>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteBase">
+    <defName>Transmute_Silver</defName>
+    <label>transmute silver x750</label>
+    <description>Transmute dark matter into silver.</description>
+    <jobString>Transmuting silver.</jobString>
+    <products>
+      <Silver>750</Silver>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteBase">
+    <defName>Transmute_Plasteel</defName>
+    <label>transmute plasteel x75</label>
+    <description>Transmute dark matter into plasteel.</description>
+    <jobString>Transmuting plasteel.</jobString>
+    <products>
+      <Plasteel>75</Plasteel>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteBase">
+    <defName>Transmute_Jade</defName>
+    <label>transmute jade x75</label>
+    <description>Transmute dark matter into jade.</description>
+    <jobString>Transmuting jade.</jobString>
+    <products>
+      <Jade>75</Jade>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteBase">
+    <defName>Transmute_Gold</defName>
+    <label>transmute gold x750</label>
+    <description>Transmute dark matter into gold.</description>
+    <jobString>Transmuting gold.</jobString>
+    <products>
+      <Gold>750</Gold>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteBase">
+    <defName>Transmute_Granite</defName>
+    <label>transmute granite blocks x75</label>
+    <description>Transmute dark matter into granite blocks.</description>
+    <jobString>Transmuting granite.</jobString>
+    <products>
+      <BlocksGranite>75</BlocksGranite>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteBase">
+    <defName>Transmute_Limestone</defName>
+    <label>transmute limestone blocks x75</label>
+    <description>Transmute dark matter into limestone blocks.</description>
+    <jobString>Transmuting limestone.</jobString>
+    <products>
+      <BlocksLimestone>75</BlocksLimestone>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteBase">
+    <defName>Transmute_Marble</defName>
+    <label>transmute marble blocks x75</label>
+    <description>Transmute dark matter into marble blocks.</description>
+    <jobString>Transmuting marble.</jobString>
+    <products>
+      <BlocksMarble>75</BlocksMarble>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteBase">
+    <defName>Transmute_Sandstone</defName>
+    <label>transmute sandstone blocks x75</label>
+    <description>Transmute dark matter into sandstone blocks.</description>
+    <jobString>Transmuting sandstone.</jobString>
+    <products>
+      <BlocksSandstone>75</BlocksSandstone>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteBase">
+    <defName>Transmute_Slate</defName>
+    <label>transmute slate blocks x75</label>
+    <description>Transmute dark matter into slate blocks.</description>
+    <jobString>Transmuting slate.</jobString>
+    <products>
+      <BlocksSlate>75</BlocksSlate>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteBase">
+    <defName>Transmute_Dye</defName>
+    <label>transmute dye x75</label>
+    <description>Transmute dark matter into dye.</description>
+    <jobString>Transmuting dye.</jobString>
+    <products>
+      <Dye>75</Dye>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteBase">
+    <defName>Transmute_Hops</defName>
+    <label>transmute hops x75</label>
+    <description>Transmute dark matter into hops.</description>
+    <jobString>Transmuting hops.</jobString>
+    <products>
+      <RawHops>75</RawHops>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteBase">
+    <defName>Transmute_Psychoid</defName>
+    <label>transmute psychoid leaves x75</label>
+    <description>Transmute dark matter into psychoid leaves.</description>
+    <jobString>Transmuting psychoid leaves.</jobString>
+    <products>
+      <PsychoidLeaves>75</PsychoidLeaves>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteBase">
+    <defName>Transmute_Smokeleaf</defName>
+    <label>transmute smokeleaf leaves x75</label>
+    <description>Transmute dark matter into smokeleaf leaves.</description>
+    <jobString>Transmuting smokeleaf leaves.</jobString>
+    <products>
+      <SmokeleafLeaves>75</SmokeleafLeaves>
+    </products>
+  </RecipeDef>
+</Defs>

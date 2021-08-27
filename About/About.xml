@@ -6,11 +6,10 @@
 		<li>1.3</li>
 	</supportedVersions>
 	<packageId>shadowswilliam.nonequivalentexchange</packageId>
-	<description>
-This is a mod that aims to add a cheaty building capable of manufacturing any material you need, for minimal cost.
+	<description>This is a mod that aims to add a cheaty building capable of manufacturing any material you need, for minimal cost.
 It was inspired by OverPowered Gaming and Nanotech Overpower, but both had features I wasn't looking for, so I decided to make my own flavour of it.
 
-This mod adds the Transmutation Table, which converts raw resources into Dark Matter, which can then be used to transmute many other raw resources.
-It also adds the Energy Condenser, a special battery with a huge capacity and efficiency above 100%.
+This mod adds the transmutation table, which converts raw resources into dark matter, which can then be used to transmute many other raw resources.
+It also adds the dark matter relay, a special battery with a huge capacity and efficiency above 100%, resulting in more energy generated.
 	</description>
 </ModMetaData>

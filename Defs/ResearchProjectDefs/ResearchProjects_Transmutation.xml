@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>DarkmatterAlchemy</defName>
+    <label>dark matter alchemy</label>
+    <description>Build a transmutation table to start experimenting with transmutation and dark matter.</description>
+    <baseCost>10</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>4.90</researchViewY>
+    <techprintCount>1</techprintCount>
+    <techprintCommonality>0</techprintCommonality>
+    <techprintMarketValue>0</techprintMarketValue>
+    <heldByFactionCategoryTags>
+      <li>Unknown</li>
+    </heldByFactionCategoryTags>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>DarkmatterRelaying</defName>
+    <label>dark matter relaying</label>
+    <description>Build dark matter infused batteries that have much bigger efficiency and capacity.</description>
+    <baseCost>100</baseCost>
+    <techLevel>Industrial</techLevel>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>4.25</researchViewY>
+    <prerequisites>
+      <li>DarkmatterAlchemy</li>
+      <li>Batteries</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>EnergyCollecting</defName>
+    <label>energy collecting</label>
+    <description>Build dark matter infused solar panels that output much more power under sunlight.</description>
+    <baseCost>100</baseCost>
+    <techLevel>Industrial</techLevel>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>4.25</researchViewY>
+    <prerequisites>
+      <li>DarkmatterAlchemy</li>
+      <li>SolarPanels</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>AntimatterAlchemy</defName>
+    <label>anti-matter alchemy</label>
+    <description>Build dark matter transmutation tables in order to gain the ability to create anti-matter and gain access to more transmutations.</description>
+    <baseCost>100</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>4.90</researchViewY>
+    <prerequisites>
+      <li>DarkmatterAlchemy</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>AntimatterRelaying</defName>
+    <label>anti-matter relaying</label>
+    <description>Build anti-matter infused batteries that have incredibly huge efficiency and capacity.</description>
+    <baseCost>100</baseCost>
+    <techLevel>Industrial</techLevel>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>4.25</researchViewY>
+    <prerequisites>
+      <li>AntimatterAlchemy</li>
+    </prerequisites>
+  </ResearchProjectDef>
+</Defs>
