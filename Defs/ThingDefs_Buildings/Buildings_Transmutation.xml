@@ -237,7 +237,7 @@
     <designationHotKey>Misc4</designationHotKey>
     <canOverlapZones>false</canOverlapZones>
     <researchPrerequisites>
-      <li>DarkmatterRelaying</li>
+      <li>AntimatterRelaying</li>
     </researchPrerequisites>
   </ThingDef>
 

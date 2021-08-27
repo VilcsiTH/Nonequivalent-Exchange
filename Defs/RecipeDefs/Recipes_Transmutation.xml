@@ -365,10 +365,30 @@
     <description>Transmute anti-matter into alpaca wool.</description>
     <jobString>Transmuting alpaca wool.</jobString>
     <products>
-      <FabricAlpaca>75</FabricAlpaca>
+      <WoolAlpaca>75</WoolAlpaca>
     </products>
   </RecipeDef>
 
+    <RecipeDef ParentName="AntiBase">
+    <defName>Transmute_Bison</defName>
+    <label>transmute bison wool x75</label>
+    <description>Transmute anti-matter into bison wool.</description>
+    <jobString>Transmuting bison wool.</jobString>
+    <products>
+      <WoolBison>75</WoolBison>
+    </products>
+  </RecipeDef>
+  
+    <RecipeDef ParentName="AntiBase">
+    <defName>Transmute_Cloth</defName>
+    <label>transmute cloth x75</label>
+    <description>Transmute anti-matter into cloth.</description>
+    <jobString>Transmuting cloth.</jobString>
+    <products>
+      <Cloth>75</Cloth>
+    </products>
+  </RecipeDef>
+      
   <RecipeDef>
     <defName>Transmute_Investigation</defName>
     <label>experiment with dark matter</label>
@@ -385,17 +405,17 @@
     <ingredients>
       <li>
         <filter>
-          <ThingDefs>
+          <thingDefs>
             <li>DarkMatter</li>
-          </ThingDefs>
+          </thingDefs>
         </filter>
         <count>75</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
-      <ThingDefs>
+      <thingDefs>
         <li>DarkMatter</li>
-      </ThingDefs>
+      </thingDefs>
     </fixedIngredientFilter>
     <products>
       <Techprint_AntimatterAlchemy>1</Techprint_AntimatterAlchemy>
