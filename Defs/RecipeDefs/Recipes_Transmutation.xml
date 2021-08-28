@@ -388,7 +388,7 @@
   </RecipeDef>
 
   <RecipeDef ParentName="TransmuteDarkBase">
-    <defName>Transmute_Alpaca</defName>
+    <defName>Transmute_WoolAlpaca</defName>
     <label>transmute alpaca wool x75</label>
     <description>Transmute anti-matter into alpaca wool.</description>
     <jobString>Transmuting alpaca wool.</jobString>
@@ -398,7 +398,7 @@
   </RecipeDef>
 
     <RecipeDef ParentName="TransmuteDarkBase">
-    <defName>Transmute_Bison</defName>
+    <defName>Transmute_WoolBison</defName>
     <label>transmute bison wool x75</label>
     <description>Transmute anti-matter into bison wool.</description>
     <jobString>Transmuting bison wool.</jobString>
@@ -418,12 +418,62 @@
   </RecipeDef>
 
   <RecipeDef ParentName="TransmuteDarkBase">
-    <defName>Transmute_Cloth</defName>
-    <label>transmute cloth x75</label>
-    <description>Transmute anti-matter into cloth.</description>
-    <jobString>Transmuting cloth.</jobString>
+    <defName>Transmute_Devilstrand</defName>
+    <label>transmute devilstrand x75</label>
+    <description>Transmute anti-matter into devilstrand.</description>
+    <jobString>Transmuting devilstrand.</jobString>
     <products>
-      <Cloth>75</Cloth>
+      <DevilstrandCloth>75</DevilstrandCloth>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Hyperweave</defName>
+    <label>transmute hyperweave x75</label>
+    <description>Transmute anti-matter into hyperweave.</description>
+    <jobString>Transmuting hyperweave.</jobString>
+    <products>
+      <Hyperweave>75</Hyperweave>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_WoolMegasloth</defName>
+    <label>transmute megasloth wool x75</label>
+    <description>Transmute anti-matter into megasloth wool.</description>
+    <jobString>Transmuting megasloth wool.</jobString>
+    <products>
+      <WoolMegasloth>75</WoolMegasloth>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_WoolMuffalo</defName>
+    <label>transmute muffalo wool x75</label>
+    <description>Transmute anti-matter into muffalo wool.</description>
+    <jobString>Transmuting muffalo wool.</jobString>
+    <products>
+      <WoolMuffalo>75</WoolMuffalo>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_WoolSheep</defName>
+    <label>transmute sheep wool x75</label>
+    <description>Transmute anti-matter into sheep wool.</description>
+    <jobString>Transmuting sheep wool.</jobString>
+    <products>
+      <WoolSheep>75</WoolSheep>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Synthread</defName>
+    <label>transmute synthread x75</label>
+    <description>Transmute anti-matter into synthread.</description>
+    <jobString>Transmuting synthread.</jobString>
+    <products>
+      <Synthread>75</Synthread>
     </products>
   </RecipeDef>
       

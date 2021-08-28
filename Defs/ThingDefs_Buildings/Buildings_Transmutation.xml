@@ -139,17 +139,17 @@
       <li>Stony</li>
     </stuffCategories>
     <defaultStuff>BlocksGranite</defaultStuff>
-    <costStuffCount>90</costStuffCount>
+    <costStuffCount>180</costStuffCount>
     <costList>
-      <Steel>90</Steel>
-      <DarkMatter>90</DarkMatter>
+      <Steel>180</Steel>
+      <AntiMatter>180</AntiMatter>
     </costList>
     <altitudeLayer>Building</altitudeLayer>
     <fillPercent>0.5</fillPercent>
     <useHitPoints>True</useHitPoints>
     <statBases>
-      <WorkToBuild>170</WorkToBuild>
-      <MaxHitPoints>1600</MaxHitPoints>
+      <WorkToBuild>15</WorkToBuild>
+      <MaxHitPoints>14200</MaxHitPoints>
       <Flammability>1.0</Flammability>
     </statBases>
     <size>(3,1)</size>
@@ -243,7 +243,7 @@
     <drawerType>MapMeshAndRealTime</drawerType>
     <thingClass>Building_Battery</thingClass>
     <graphicData>
-      <texPath>Things/Building/Power/DarkmatterRelay</texPath>
+      <texPath>Things/Building/Power/AntimatterRelay</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(2,3)</drawSize>
       <damageData>
@@ -281,8 +281,8 @@
     </costList>
     <comps>
       <li Class="CompProperties_Battery">
-        <storedEnergyMax>5300</storedEnergyMax>
-        <efficiency>4.5</efficiency>
+        <storedEnergyMax>46800</storedEnergyMax>
+        <efficiency>40</efficiency>
         <shortCircuitInRain>false</shortCircuitInRain>
         <transmitsPower>true</transmitsPower>
       </li>
