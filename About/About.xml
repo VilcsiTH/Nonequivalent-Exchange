@@ -6,10 +6,10 @@
 		<li>1.3</li>
 	</supportedVersions>
 	<packageId>shadowswilliam.nonequivalentexchange</packageId>
-	<description>This is a mod that aims to add a cheaty building capable of manufacturing any material you need, for minimal cost.
+	<description>This mod aims to add a cheaty version of alchemy that allows you to transmute items into other items at a transmutation table.
 It was inspired by OverPowered Gaming and Nanotech Overpower, but both had features I wasn't looking for, so I decided to make my own flavour of it.
 
-This mod adds the transmutation table, which converts raw resources into dark matter, which can then be used to transmute many other raw resources.
-It also adds the dark matter relay, a special battery with a huge capacity and efficiency above 100%, resulting in more energy generated.
-	</description>
+You can run this mod even if you don't plan on using it - in order to start transmuting items, you need to get a techprint and research alchemy. This techprint isn't sold anywhere and can only be spawned in using dev mode, or using the included scenario.(It goes without saying that you can also edit any scenario to start with it.)
+Thanks to the research, you could also make a scenario where you start with a Transmutation Table and no ability to create a new one. That way, if you lose it from a raid or event, you lose the ability to transmute materials.
+Being inspired by ProjectE, this mod uses dark matter and anti-matter as materials for transmutation. You can also fuse the matters to technology to improve them, such as the dark matter relay, an incredible battery.</description>
 </ModMetaData>

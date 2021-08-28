@@ -8,6 +8,7 @@
     <recipeUsers>
       <li>TableTransmutation</li>
       <li>TableDarkMatter</li>
+      <li>TableAntiMatter</li>
     </recipeUsers>
     <ingredients>
       <li>
@@ -27,13 +28,14 @@
     <workSkill>Crafting</workSkill>
   </RecipeDef>
 
-  <RecipeDef Name="AntiBase" Abstract="True">
+  <RecipeDef Name="TransmuteDarkBase" Abstract="True">
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cremate</effectWorking>
     <soundWorking>Recipe_Cremate</soundWorking>
     <workAmount>300</workAmount>
     <recipeUsers>
       <li>TableDarkMatter</li>
+      <li>TableAntiMatter</li>
     </recipeUsers>
     <ingredients>
       <li>
@@ -43,6 +45,32 @@
           </thingDefs>
         </filter>
         <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AntiMatter</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+  <RecipeDef Name="TransmuteAntiBase" Abstract="True">
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <workAmount>1200</workAmount>
+    <recipeUsers>
+      <li>TableAntiMatter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AntiMatter</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
@@ -359,7 +387,7 @@
     </products>
   </RecipeDef>
 
-  <RecipeDef ParentName="AntiBase">
+  <RecipeDef ParentName="TransmuteDarkBase">
     <defName>Transmute_Alpaca</defName>
     <label>transmute alpaca wool x75</label>
     <description>Transmute anti-matter into alpaca wool.</description>
@@ -369,7 +397,7 @@
     </products>
   </RecipeDef>
 
-    <RecipeDef ParentName="AntiBase">
+    <RecipeDef ParentName="TransmuteDarkBase">
     <defName>Transmute_Bison</defName>
     <label>transmute bison wool x75</label>
     <description>Transmute anti-matter into bison wool.</description>
@@ -379,7 +407,17 @@
     </products>
   </RecipeDef>
   
-    <RecipeDef ParentName="AntiBase">
+    <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Cloth</defName>
+    <label>transmute cloth x75</label>
+    <description>Transmute anti-matter into cloth.</description>
+    <jobString>Transmuting cloth.</jobString>
+    <products>
+      <Cloth>75</Cloth>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
     <defName>Transmute_Cloth</defName>
     <label>transmute cloth x75</label>
     <description>Transmute anti-matter into cloth.</description>
@@ -390,7 +428,7 @@
   </RecipeDef>
       
   <RecipeDef>
-    <defName>Transmute_Investigation</defName>
+    <defName>Transmute_InvestigateDarkMatter</defName>
     <label>experiment with dark matter</label>
     <description>Learn more about dark matter's properties from experimenting.</description>
     <jobString>Experimenting with dark matter.</jobString>
@@ -407,6 +445,40 @@
         <filter>
           <thingDefs>
             <li>DarkMatter</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>DarkMatter</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Techprint_DarkmatterAlchemy>1</Techprint_DarkmatterAlchemy>
+    </products>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Transmute_InvestigateAntiMatter</defName>
+    <label>experiment with anti-matter</label>
+    <description>Learn more about anti-matter's properties from experimenting.</description>
+    <jobString>Experimenting with anti-matter.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>1200</workAmount>
+    <recipeUsers>
+      <li>TableDarkMatter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AntiMatter</li>
           </thingDefs>
         </filter>
         <count>75</count>

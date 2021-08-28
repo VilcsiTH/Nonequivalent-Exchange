@@ -32,7 +32,7 @@
     <fillPercent>0.5</fillPercent>
     <useHitPoints>True</useHitPoints>
     <statBases>
-      <WorkToBuild>2000</WorkToBuild>
+      <WorkToBuild>1500</WorkToBuild>
       <MaxHitPoints>180</MaxHitPoints>
       <Flammability>1.0</Flammability>
     </statBases>
@@ -90,7 +90,65 @@
     <fillPercent>0.5</fillPercent>
     <useHitPoints>True</useHitPoints>
     <statBases>
-      <WorkToBuild>340</WorkToBuild>
+      <WorkToBuild>170</WorkToBuild>
+      <MaxHitPoints>1600</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <size>(3,1)</size>
+    <designationCategory>Production</designationCategory>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>AntimatterAlchemy</li>
+    </researchPrerequisites>
+  </ThingDef>
+  
+    <ThingDef ParentName="BenchBase">
+    <defName>TableAntiMatter</defName>
+    <label>anti-matter transmutation table</label>
+    <description>Made from fusing anti-matter to a transmutation table, an alchemists' most powerful weapon.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Production/TableAntiMatter</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,1)</drawSize>
+      <shadowData>
+        <volume>(2.4, 1, 0.8)</volume>
+      </shadowData>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <defaultStuff>BlocksGranite</defaultStuff>
+    <costStuffCount>90</costStuffCount>
+    <costList>
+      <Steel>90</Steel>
+      <DarkMatter>90</DarkMatter>
+    </costList>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>170</WorkToBuild>
       <MaxHitPoints>1600</MaxHitPoints>
       <Flammability>1.0</Flammability>
     </statBases>
