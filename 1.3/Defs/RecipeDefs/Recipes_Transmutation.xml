@@ -94,6 +94,7 @@
     <recipeUsers>
       <li>TableTransmutation</li>
       <li>TableDarkMatter</li>
+      <li>TableAntiMatter</li>
     </recipeUsers>
     <ingredients>
       <li>
@@ -133,6 +134,7 @@
     <recipeUsers>
       <li>TableTransmutation</li>
       <li>TableDarkMatter</li>
+      <li>TableAntiMatter</li>
     </recipeUsers>
     <ingredients>
       <li>
@@ -171,6 +173,7 @@
     <workAmount>300</workAmount>
     <recipeUsers>
       <li>TableDarkMatter</li>
+      <li>TableAntiMatter</li>
     </recipeUsers>
     <ingredients>
       <li>
@@ -205,6 +208,7 @@
     <workAmount>300</workAmount>
     <recipeUsers>
       <li>TableDarkMatter</li>
+      <li>TableAntiMatter</li>
     </recipeUsers>
     <ingredients>
       <li>
@@ -228,52 +232,12 @@
   </RecipeDef>
 
   <RecipeDef ParentName="TransmuteBase">
-    <defName>Transmute_Wood</defName>
-    <label>transmute wood x75</label>
-    <description>Transmute dark matter into wood logs.</description>
-    <jobString>Transmuting wood.</jobString>
+    <defName>Transmute_Gold</defName>
+    <label>transmute gold x500</label>
+    <description>Transmute dark matter into gold.</description>
+    <jobString>Transmuting gold.</jobString>
     <products>
-      <WoodLog>75</WoodLog>
-    </products>
-  </RecipeDef>
-
-  <RecipeDef ParentName="TransmuteBase">
-    <defName>Transmute_Uranium</defName>
-    <label>transmute uranium x75</label>
-    <description>Transmute dark matter into uranium.</description>
-    <jobString>Transmuting uranium.</jobString>
-    <products>
-      <Uranium>75</Uranium>
-    </products>
-  </RecipeDef>
-
-  <RecipeDef ParentName="TransmuteBase">
-    <defName>Transmute_Steel</defName>
-    <label>transmute steel x75</label>
-    <description>Transmute dark matter into steel.</description>
-    <jobString>Transmuting steel.</jobString>
-    <products>
-      <Steel>75</Steel>
-    </products>
-  </RecipeDef>
-
-  <RecipeDef ParentName="TransmuteBase">
-    <defName>Transmute_Silver</defName>
-    <label>transmute silver x750</label>
-    <description>Transmute dark matter into silver.</description>
-    <jobString>Transmuting silver.</jobString>
-    <products>
-      <Silver>750</Silver>
-    </products>
-  </RecipeDef>
-
-  <RecipeDef ParentName="TransmuteBase">
-    <defName>Transmute_Plasteel</defName>
-    <label>transmute plasteel x75</label>
-    <description>Transmute dark matter into plasteel.</description>
-    <jobString>Transmuting plasteel.</jobString>
-    <products>
-      <Plasteel>75</Plasteel>
+      <Gold>500</Gold>
     </products>
   </RecipeDef>
 
@@ -288,12 +252,82 @@
   </RecipeDef>
 
   <RecipeDef ParentName="TransmuteBase">
-    <defName>Transmute_Gold</defName>
-    <label>transmute gold x750</label>
-    <description>Transmute dark matter into gold.</description>
-    <jobString>Transmuting gold.</jobString>
+    <defName>Transmute_Plasteel</defName>
+    <label>transmute plasteel x75</label>
+    <description>Transmute dark matter into plasteel.</description>
+    <jobString>Transmuting plasteel.</jobString>
     <products>
-      <Gold>750</Gold>
+      <Plasteel>75</Plasteel>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteBase">
+    <defName>Transmute_Silver</defName>
+    <label>transmute silver x500</label>
+    <description>Transmute dark matter into silver.</description>
+    <jobString>Transmuting silver.</jobString>
+    <products>
+      <Silver>500</Silver>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteBase">
+    <defName>Transmute_Steel</defName>
+    <label>transmute steel x75</label>
+    <description>Transmute dark matter into steel.</description>
+    <jobString>Transmuting steel.</jobString>
+    <products>
+      <Steel>75</Steel>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteBase">
+    <defName>Transmute_Uranium</defName>
+    <label>transmute uranium x75</label>
+    <description>Transmute dark matter into uranium.</description>
+    <jobString>Transmuting uranium.</jobString>
+    <products>
+      <Uranium>75</Uranium>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteBase">
+    <defName>Transmute_Wood</defName>
+    <label>transmute wood x75</label>
+    <description>Transmute dark matter into wood logs.</description>
+    <jobString>Transmuting wood.</jobString>
+    <products>
+      <WoodLog>75</WoodLog>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Chemfuel</defName>
+    <label>transmute chemfuel x150</label>
+    <description>Transmute anti-matter into chemfuel.</description>
+    <jobString>Transmuting chemfuel.</jobString>
+    <products>
+      <Chemfuel>150</Chemfuel>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Component</defName>
+    <label>transmute component x50</label>
+    <description>Transmute anti-matter into component.</description>
+    <jobString>Transmuting component.</jobString>
+    <products>
+      <ComponentIndustrial>50</ComponentIndustrial>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_AdvancedComponent</defName>
+    <label>transmute advanced component x50</label>
+    <description>Transmute anti-matter into advanced component.</description>
+    <jobString>Transmuting advanced component.</jobString>
+    <products>
+      <ComponentSpacer>50</ComponentSpacer>
     </products>
   </RecipeDef>
 
@@ -388,26 +422,236 @@
   </RecipeDef>
 
   <RecipeDef ParentName="TransmuteDarkBase">
-    <defName>Transmute_WoolAlpaca</defName>
-    <label>transmute alpaca wool x75</label>
-    <description>Transmute anti-matter into alpaca wool.</description>
-    <jobString>Transmuting alpaca wool.</jobString>
+    <defName>Transmute_Ambrosia</defName>
+    <label>transmute ambrosia x400</label>
+    <description>Transmute anti-matter into ambrosia.</description>
+    <jobString>Transmuting ambrosia.</jobString>
     <products>
-      <WoolAlpaca>75</WoolAlpaca>
+      <Neutroamine>400</Neutroamine>
     </products>
   </RecipeDef>
 
-    <RecipeDef ParentName="TransmuteDarkBase">
-    <defName>Transmute_WoolBison</defName>
-    <label>transmute bison wool x75</label>
-    <description>Transmute anti-matter into bison wool.</description>
-    <jobString>Transmuting bison wool.</jobString>
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Tea</defName>
+    <label>transmute psychite tea x400</label>
+    <description>Transmute anti-matter into psychite tea.</description>
+    <jobString>Transmuting psychite tea.</jobString>
     <products>
-      <WoolBison>75</WoolBison>
+      <PsychiteTea>400</PsychiteTea>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Joint</defName>
+    <label>transmute smokeleaf joint x400</label>
+    <description>Transmute anti-matter into smokeleaf joint.</description>
+    <jobString>Transmuting smokeleaf joint.</jobString>
+    <products>
+      <SmokeleafJoint>400</SmokeleafJoint>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Tea</defName>
+    <label>transmute wort x25</label>
+    <description>Transmute anti-matter into wort.</description>
+    <jobString>Transmuting wort.</jobString>
+    <products>
+      <Wort>25</Wort>
     </products>
   </RecipeDef>
   
     <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Neutroamine</defName>
+    <label>transmute neutroamine x150</label>
+    <description>Transmute anti-matter into neutroamine.</description>
+    <jobString>Transmuting neutroamine.</jobString>
+    <products>
+      <Neutroamine>150</Neutroamine>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Gauranlen</defName>
+    <label>transmute gauranlen seed x75</label>
+    <description>Transmute anti-matter into gauranlen seed.</description>
+    <jobString>Transmuting gauranlen seed.</jobString>
+    <products>
+      <GauranlenSeed>75</GauranlenSeed>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Herbal</defName>
+    <label>transmute herbal medicine x25</label>
+    <description>Transmute anti-matter into herbal medicine.</description>
+    <jobString>Transmuting herbal medicine.</jobString>
+    <products>
+      <MedicineHerbal>25</MedicineHerbal>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Medicine</defName>
+    <label>transmute medicine x25</label>
+    <description>Transmute anti-matter into medicine.</description>
+    <jobString>Transmuting medicine.</jobString>
+    <products>
+      <MedicineIndustrial>25</MedicineIndustrial>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Glitterworld</defName>
+    <label>transmute glitterworld medicine x25</label>
+    <description>Transmute anti-matter into glitterworld medicine.</description>
+    <jobString>Transmuting glitterworld medicine.</jobString>
+    <products>
+      <MedicineUltratech>25</MedicineUltratech>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Healer</defName>
+    <label>transmute healer mech serum x10</label>
+    <description>Transmute anti-matter into healer mech serum.</description>
+    <jobString>Transmuting healer mech serum.</jobString>
+    <products>
+      <MechSerumHealer>10</MechSerumHealer>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Resurrector</defName>
+    <label>transmute resurrector mech serum x10</label>
+    <description>Transmute anti-matter into resurrector mech serum.</description>
+    <jobString>Transmuting resurrector mech serum.</jobString>
+    <products>
+      <MechSerumResurrector>10</MechSerumResurrector>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Agave</defName>
+    <label>transmute agave fruit x75</label>
+    <description>Transmute anti-matter into agave fruit.</description>
+    <jobString>Transmuting agave fruit.</jobString>
+    <products>
+      <RawAgave>75</RawAgave>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Berries</defName>
+    <label>transmute berries x75</label>
+    <description>Transmute anti-matter into berries.</description>
+    <jobString>Transmuting berries.</jobString>
+    <products>
+      <RawBerries>75</RawBerries>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Milk</defName>
+    <label>transmute milk x75</label>
+    <description>Transmute anti-matter into milk.</description>
+    <jobString>Transmuting milk.</jobString>
+    <products>
+      <Milk>75</Milk>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Kibble</defName>
+    <label>transmute kibble x75</label>
+    <description>Transmute anti-matter into kibble.</description>
+    <jobString>Transmuting kibble.</jobString>
+    <products>
+      <Kibble>75</Kibble>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Pemmican</defName>
+    <label>transmute pemmican x75</label>
+    <description>Transmute anti-matter into pemmican.</description>
+    <jobString>Transmuting pemmican.</jobString>
+    <products>
+      <Pemmican>75</Pemmican>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Simple</defName>
+    <label>transmute simple meal x10</label>
+    <description>Transmute anti-matter into simple meal.</description>
+    <jobString>Transmuting simple meal.</jobString>
+    <products>
+      <MealSimple>10</MealSimple>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Fine</defName>
+    <label>transmute fine meal x10</label>
+    <description>Transmute anti-matter into fine meal.</description>
+    <jobString>Transmuting fine meal.</jobString>
+    <products>
+      <MealFine>10</MealFine>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_FineVeg</defName>
+    <label>transmute vegetarian fine meal x10</label>
+    <description>Transmute anti-matter into vegetarian fine meal.</description>
+    <jobString>Transmuting vegetarian fine meal.</jobString>
+    <products>
+      <MealFine_Veg>10</MealFine_Veg>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_FineMeat</defName>
+    <label>transmute carnivore fine meal x10</label>
+    <description>Transmute anti-matter into carnivore fine meal.</description>
+    <jobString>Transmuting carnivore fine meal.</jobString>
+    <products>
+      <MealFine_Meat>10</MealFine_Meat>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Lavish</defName>
+    <label>transmute lavish meal x10</label>
+    <description>Transmute anti-matter into lavish meal.</description>
+    <jobString>Transmuting lavish meal.</jobString>
+    <products>
+      <MealLavish>10</MealLavish>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_LavishVeg</defName>
+    <label>transmute vegetarian lavish meal x10</label>
+    <description>Transmute anti-matter into vegetarian lavish meal.</description>
+    <jobString>Transmuting vegetarian lavish meal.</jobString>
+    <products>
+      <MealLavish_Veg>10</MealLavish_Veg>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_LavishMeat</defName>
+    <label>transmute carnivore lavish meal x10</label>
+    <description>Transmute anti-matter into carnivore lavish meal.</description>
+    <jobString>Transmuting carnivore lavish meal.</jobString>
+    <products>
+      <MealLavish_Meat>10</MealLavish_Meat>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
     <defName>Transmute_Cloth</defName>
     <label>transmute cloth x75</label>
     <description>Transmute anti-matter into cloth.</description>
@@ -438,42 +682,262 @@
   </RecipeDef>
 
   <RecipeDef ParentName="TransmuteDarkBase">
-    <defName>Transmute_WoolMegasloth</defName>
-    <label>transmute megasloth wool x75</label>
-    <description>Transmute anti-matter into megasloth wool.</description>
-    <jobString>Transmuting megasloth wool.</jobString>
-    <products>
-      <WoolMegasloth>75</WoolMegasloth>
-    </products>
-  </RecipeDef>
-
-  <RecipeDef ParentName="TransmuteDarkBase">
-    <defName>Transmute_WoolMuffalo</defName>
-    <label>transmute muffalo wool x75</label>
-    <description>Transmute anti-matter into muffalo wool.</description>
-    <jobString>Transmuting muffalo wool.</jobString>
-    <products>
-      <WoolMuffalo>75</WoolMuffalo>
-    </products>
-  </RecipeDef>
-
-  <RecipeDef ParentName="TransmuteDarkBase">
-    <defName>Transmute_WoolSheep</defName>
-    <label>transmute sheep wool x75</label>
-    <description>Transmute anti-matter into sheep wool.</description>
-    <jobString>Transmuting sheep wool.</jobString>
-    <products>
-      <WoolSheep>75</WoolSheep>
-    </products>
-  </RecipeDef>
-
-  <RecipeDef ParentName="TransmuteDarkBase">
     <defName>Transmute_Synthread</defName>
     <label>transmute synthread x75</label>
     <description>Transmute anti-matter into synthread.</description>
     <jobString>Transmuting synthread.</jobString>
     <products>
       <Synthread>75</Synthread>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_WoolAlpaca</defName>
+    <label>transmute alpaca wool x100</label>
+    <description>Transmute anti-matter into alpaca wool.</description>
+    <jobString>Transmuting alpaca wool.</jobString>
+    <products>
+      <WoolAlpaca>100</WoolAlpaca>
+    </products>
+  </RecipeDef>
+
+    <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_WoolBison</defName>
+    <label>transmute bison wool x100</label>
+    <description>Transmute anti-matter into bison wool.</description>
+    <jobString>Transmuting bison wool.</jobString>
+    <products>
+      <WoolBison>100</WoolBison>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_WoolMegasloth</defName>
+    <label>transmute megasloth wool x100</label>
+    <description>Transmute anti-matter into megasloth wool.</description>
+    <jobString>Transmuting megasloth wool.</jobString>
+    <products>
+      <WoolMegasloth>100</WoolMegasloth>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_WoolMuffalo</defName>
+    <label>transmute muffalo wool x100</label>
+    <description>Transmute anti-matter into muffalo wool.</description>
+    <jobString>Transmuting muffalo wool.</jobString>
+    <products>
+      <WoolMuffalo>100</WoolMuffalo>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_WoolSheep</defName>
+    <label>transmute sheep wool x100</label>
+    <description>Transmute anti-matter into sheep wool.</description>
+    <jobString>Transmuting sheep wool.</jobString>
+    <products>
+      <WoolSheep>100</WoolSheep>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Bearskin</defName>
+    <label>transmute bearskin x75</label>
+    <description>Transmute anti-matter into bearskin.</description>
+    <jobString>Transmuting bearskin.</jobString>
+    <products>
+      <Leather_Bear>75</Leather_Bear>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Birdskin</defName>
+    <label>transmute birdskin x75</label>
+    <description>Transmute anti-matter into birdskin.</description>
+    <jobString>Transmuting birdskin.</jobString>
+    <products>
+      <Leather_Bird>75</Leather_Bird>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Bluefur</defName>
+    <label>transmute bluefur x75</label>
+    <description>Transmute anti-matter into bluefur.</description>
+    <jobString>Transmuting bluefur.</jobString>
+    <products>
+      <Leather_Bluefur>75</Leather_Bluefur>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Camel</defName>
+    <label>transmute camelhide x75</label>
+    <description>Transmute anti-matter into camelhide.</description>
+    <jobString>Transmuting camelhide.</jobString>
+    <products>
+      <Leather_Camel>75</Leather_Camel>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Chinchilla</defName>
+    <label>transmute chinchilla fur x75</label>
+    <description>Transmute anti-matter into chincilla fur.</description>
+    <jobString>Transmuting chinchilla fur.</jobString>
+    <products>
+      <Leather_Chinchilla>75</Leather_Chinchilla>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Dog</defName>
+    <label>transmute dog leather x75</label>
+    <description>Transmute anti-matter into dog leather.</description>
+    <jobString>Transmuting dog leather.</jobString>
+    <products>
+      <Leather_Dog>75</Leather_Dog>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Elephant</defName>
+    <label>transmute elephant leather x75</label>
+    <description>Transmute anti-matter into elephant leather.</description>
+    <jobString>Transmuting elephant leather.</jobString>
+    <products>
+      <Leather_Elephant>75</Leather_Elephant>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Fox</defName>
+    <label>transmute foxfur x75</label>
+    <description>Transmute anti-matter into foxfur.</description>
+    <jobString>Transmuting foxfur.</jobString>
+    <products>
+      <Leather_Fox>75</Leather_Fox>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Guinea</defName>
+    <label>transmute guinea pig fur x75</label>
+    <description>Transmute anti-matter into guinea pig fur.</description>
+    <jobString>Transmuting guinea pig fur.</jobString>
+    <products>
+      <Leather_GuineaPig>75</Leather_GuineaPig>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Heavy</defName>
+    <label>transmute heavy fur x75</label>
+    <description>Transmute anti-matter into heavy fur.</description>
+    <jobString>Transmuting heavy fur.</jobString>
+    <products>
+      <Leather_Heavy>75</Leather_Heavy>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Human</defName>
+    <label>transmute human leather x75</label>
+    <description>Transmute anti-matter into human leather.</description>
+    <jobString>Transmuting human leather.</jobString>
+    <products>
+      <Leather_Human>75</Leather_Human>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Light</defName>
+    <label>transmute lightleather x75</label>
+    <description>Transmute anti-matter into lightleather.</description>
+    <jobString>Transmuting lightleather.</jobString>
+    <products>
+      <Leather_Light>75</Leather_Light>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Lizard</defName>
+    <label>transmute lizardskin x75</label>
+    <description>Transmute anti-matter into lizardskin.</description>
+    <jobString>Transmuting lizardskin.</jobString>
+    <products>
+      <Leather_Lizard>75</Leather_Lizard>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Panthera</defName>
+    <label>transmute panthera fur x75</label>
+    <description>Transmute anti-matter into panthera fur.</description>
+    <jobString>Transmuting panthera fur.</jobString>
+    <products>
+      <Leather_Panthera>75</Leather_Panthera>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Patch</defName>
+    <label>transmute patchleather x75</label>
+    <description>Transmute anti-matter into patchleather.</description>
+    <jobString>Transmuting patchleather.</jobString>
+    <products>
+      <Leather_Patch>75</Leather_Patch>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Pig</defName>
+    <label>transmute pigskin x75</label>
+    <description>Transmute anti-matter into pigskin.</description>
+    <jobString>Transmuting pigskin.</jobString>
+    <products>
+      <Leather_Pig>75</Leather_Pig>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Plain</defName>
+    <label>transmute plainleather x75</label>
+    <description>Transmute anti-matter into plainleather.</description>
+    <jobString>Transmuting plainleather.</jobString>
+    <products>
+      <Leather_Plain>75</Leather_Plain>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Rhinoceros</defName>
+    <label>transmute rhinoceros leather x75</label>
+    <description>Transmute anti-matter into rhinoceros leather.</description>
+    <jobString>Transmuting rhinoceros leather.</jobString>
+    <products>
+      <Leather_Rhinoceros>75</Leather_Rhinoceros>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Thrumbo</defName>
+    <label>transmute thrumbofur x75</label>
+    <description>Transmute anti-matter into thrumbofur.</description>
+    <jobString>Transmuting thrumbofur.</jobString>
+    <products>
+      <Leather_Thrumbo>75</Leather_Thrumbo>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Wolf</defName>
+    <label>transmute wolfskin x75</label>
+    <description>Transmute anti-matter into wolfskin.</description>
+    <jobString>Transmuting wolfskin.</jobString>
+    <products>
+      <Leather_Wolf>75</Leather_Wolf>
     </products>
   </RecipeDef>
       
