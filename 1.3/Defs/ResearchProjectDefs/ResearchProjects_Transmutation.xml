@@ -4,8 +4,8 @@
     <defName>Alchemy</defName>
     <label>alchemy</label>
     <description>Build a transmutation table to start experimenting with transmutation and dark matter.</description>
-    <baseCost>10</baseCost>
-    <techLevel>Medieval</techLevel>
+    <baseCost>1</baseCost>
+    <techLevel>Neolithic</techLevel>
     <researchViewX>0.00</researchViewX>
     <researchViewY>4.90</researchViewY>
     <techprintCount>1</techprintCount>
@@ -33,6 +33,151 @@
     <heldByFactionCategoryTags>
       <li>Unknown</li>
     </heldByFactionCategoryTags>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>TransmuteTextile</defName>
+    <label>textile transmutation</label>
+    <description>Start research on textiles such as wool and leather. Unlocks access to wool and leather transmutation researches, aswell as gaining the ability to transmute sheep wool and patchleather.</description>
+    <baseCost>90</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>4.25</researchViewY>
+    <prerequisites>
+      <li>DarkmatterAlchemy</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>TransmuteWool</defName>
+    <label>wool transmutation</label>
+    <description>Transmute all kinds of wool from the transmutation table.</description>
+    <baseCost>10</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>4.25</researchViewY>
+    <prerequisites>
+      <li>TransmuteTextile</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>TransmuteLeather</defName>
+    <label>leather transmutation</label>
+    <description>Transmute all kinds of leather from the transmutation table.</description>
+    <baseCost>10</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>4.25</researchViewY>
+    <prerequisites>
+      <li>TransmuteTextile</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>TransmuteHuman</defName>
+    <label>textile transmutation</label>
+    <description>Transmute human leather and human meat.</description>
+    <baseCost>100</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>4.25</researchViewY>
+    <prerequisites>
+      <li>DarkmatterAlchemy</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>TransmuteFabric</defName>
+    <label>fabric transmutation</label>
+    <description>Transmute synthread and later, hyperweave.</description>
+    <baseCost>100</baseCost>
+    <techLevel>Ultra</techLevel>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>4.25</researchViewY>
+    <prerequisites>
+      <li>TransmuteTextile</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>TransmutePlant</defName>
+    <label>plant transmutation</label>
+    <description>Transmute all kinds of raw plants from the transmutation table.</description>
+    <baseCost>100</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>4.25</researchViewY>
+    <prerequisites>
+      <li>DarkmatterAlchemy</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>TransmuteKibble</defName>
+    <label>kibble transmutation</label>
+    <description>Transmute kibble from the transmutation table.</description>
+    <baseCost>20</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>4.25</researchViewY>
+    <prerequisites>
+      <li>DarkmatterAlchemy</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>TransmuteMeat</defName>
+    <label>meat transmutation</label>
+    <description>Transmute all kinds of raw meats, unfertilized eggs and milk from the transmutation table.</description>
+    <baseCost>100</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>4.25</researchViewY>
+    <prerequisites>
+      <li>DarkmatterAlchemy</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>TransmuteMeal</defName>
+    <label>meal transmutation</label>
+    <description>Transmute fully cooked meals from the transmutation table.</description>
+    <baseCost>100</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>4.25</researchViewY>
+    <prerequisites>
+      <li>DarkmatterAlchemy</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>TransmutePemmican</defName>
+    <label>pemmican transmutation</label>
+    <description>Transmute pemmican from the transmutation table.</description>
+    <baseCost>100</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>4.25</researchViewY>
+    <prerequisites>
+      <li>DarkmatterAlchemy</li>
+      <li>Pemmican</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>TransmuteMedicine</defName>
+    <label>medicine transmutation</label>
+    <description>Transmute industrial and later, glitterworld medicine from the transmutation table.</description>
+    <baseCost>100</baseCost>
+    <techLevel>Industrial</techLevel>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>4.25</researchViewY>
+    <prerequisites>
+      <li>DarkmatterAlchemy</li>
+      <li>MedicineProduction</li>
+    </prerequisites>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -64,6 +209,21 @@
   </ResearchProjectDef>
 
   <ResearchProjectDef>
+    <defName>TransmuteDrug</defName>
+    <label>drug transmutation</label>
+    <description>Transmute drugs from the transmutation table.</description>
+    <baseCost>100</baseCost>
+    <techLevel>Industrial</techLevel>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>4.25</researchViewY>
+    <prerequisites>
+      <li>DarkmatterAlchemy</li>
+      <li>PsychoidBrewing</li>
+      <li>Brewing</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
     <defName>AntimatterAlchemy</defName>
     <label>anti-matter alchemy</label>
     <description>Build anti matter transmutation tables that have the ability to transmute exotic items.</description>
@@ -83,6 +243,34 @@
   </ResearchProjectDef>
 
   <ResearchProjectDef>
+    <defName>TransmuteMedical</defName>
+    <label>medical drug transmutation</label>
+    <description>Transmute medical drugs from the transmutation table.</description>
+    <baseCost>100</baseCost>
+    <techLevel>Ultra</techLevel>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>4.25</researchViewY>
+    <prerequisites>
+      <li>AntimatterAlchemy</li>
+      <li>TransmuteDrug</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>TransmuteLavish</defName>
+    <label>lavish meal transmutation</label>
+    <description>Transmute fully cooked, lavish meals from the transmutation table.</description>
+    <baseCost>100</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>4.25</researchViewY>
+    <prerequisites>
+      <li>AntimatterAlchemy</li>
+      <li>TransmuteMeal</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
     <defName>AntimatterRelaying</defName>
     <label>anti-matter relaying</label>
     <description>Build anti-matter infused batteries that have incredibly huge efficiency and capacity.</description>
@@ -93,6 +281,21 @@
     <prerequisites>
       <li>AntimatterAlchemy</li>
       <li>Batteries</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>TransmuteSurvivalMeal</defName>
+    <label>survival meal transmutation</label>
+    <description>Transmute packaged survival meals from the transmutation table.</description>
+    <baseCost>100</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>4.25</researchViewY>
+    <prerequisites>
+      <li>AntimatterAlchemy</li>
+      <li>TransmuteMeal</li>
+      <li>PackagedSurvivalMeal</li>
     </prerequisites>
   </ResearchProjectDef>
 </Defs>
