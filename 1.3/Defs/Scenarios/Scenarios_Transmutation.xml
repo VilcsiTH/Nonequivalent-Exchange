@@ -60,7 +60,7 @@
         </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
-          <thingDef>Techprint_DarkmatterAlchemy</thingDef>
+          <thingDef>Techprint_Alchemy</thingDef>
           <count>1</count>
         </li>
         <li Class="ScenPart_StartingThing_Defined">
