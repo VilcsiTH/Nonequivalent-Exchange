@@ -427,7 +427,7 @@
     <description>Transmute anti-matter into ambrosia.</description>
     <jobString>Transmuting ambrosia.</jobString>
     <products>
-      <Neutroamine>400</Neutroamine>
+      <Ambrosia>400</Ambrosia>
     </products>
     <researchPrerequisite>TransmuteDrug</researchPrerequisite>
   </RecipeDef>
@@ -550,6 +550,7 @@
     <products>
       <GauranlenSeed>75</GauranlenSeed>
     </products>
+    <researchPrerequisite>TransmutePlant</researchPrerequisite>
   </RecipeDef>
 
   <RecipeDef ParentName="TransmuteDarkBase">
@@ -834,17 +835,6 @@
   <RecipeDef ParentName="TransmuteDarkBase">
     <defName>Transmute_MeatCobra</defName>
     <label>transmute cobra meat x75</label>
-    <description>Transmute anti-matter into chinchilla meat.</description>
-    <jobString>Transmuting chinchilla meat.</jobString>
-    <products>
-      <Meat_Chinchilla>75</Meat_Chinchilla>
-    </products>
-    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
-  </RecipeDef>
-
-  <RecipeDef ParentName="TransmuteDarkBase">
-    <defName>Transmute_MeatCobra</defName>
-    <label>transmute cobra meat x75</label>
     <description>Transmute anti-matter into cobra meat.</description>
     <jobString>Transmuting cobra meat.</jobString>
     <products>
@@ -860,17 +850,6 @@
     <jobString>Transmuting cougar meat.</jobString>
     <products>
       <Meat_Cougar>75</Meat_Cougar>
-    </products>
-    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
-  </RecipeDef>
-
-  <RecipeDef ParentName="TransmuteDarkBase">
-    <defName>Transmute_MeatDonkey</defName>
-    <label>transmute donkey meat x75</label>
-    <description>Transmute anti-matter into donkey meat.</description>
-    <jobString>Transmuting donkey meat.</jobString>
-    <products>
-      <Meat_Donkey>75</Meat_Donkey>
     </products>
     <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
@@ -1059,7 +1038,7 @@
     <products>
       <Meat_Megaspider>75</Meat_Megaspider>
     </products>
-    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+    <researchPrerequisite>TransmuteInsect</researchPrerequisite>
   </RecipeDef>
 
   <RecipeDef ParentName="TransmuteDarkBase">
@@ -1314,6 +1293,17 @@
   </RecipeDef>
 
   <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Jelly</defName>
+    <label>transmute insect jelly x75</label>
+    <description>Transmute anti-matter into insect jelly.</description>
+    <jobString>Transmuting insect jelly.</jobString>
+    <products>
+      <InsectJelly>75</InsectJelly>
+    </products>
+    <researchPrerequisite>TransmuteInsect</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
     <defName>Transmute_Kibble</defName>
     <label>transmute kibble x75</label>
     <description>Transmute anti-matter into kibble.</description>
@@ -1410,6 +1400,17 @@
       <MealLavish_Meat>10</MealLavish_Meat>
     </products>
     <researchPrerequisite>TransmuteLavish</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_SurvivalMeal</defName>
+    <label>transmute packaged survival meal x10</label>
+    <description>Transmute anti-matter into packaged survival meal.</description>
+    <jobString>Transmuting packaged survival meal.</jobString>
+    <products>
+      <MealSurvivalPack>10</MealSurvivalPack>
+    </products>
+    <researchPrerequisite>TransmuteSurvival</researchPrerequisite>
   </RecipeDef>
 
   <RecipeDef ParentName="TransmuteDarkBase">
@@ -1729,6 +1730,523 @@
       <Leather_Wolf>75</Leather_Wolf>
     </products>
     <researchPrerequisite>TransmuteLeather</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Beckon</defName>
+    <label>transmute psytrainer (beckon) x1</label>
+    <description>Transmute anti-matter into psytrainer (beckon).</description>
+    <jobString>Transmuting psytrainer (beckon).</jobString>
+    <products>
+      <Psytrainer_Beckon>1</Psytrainer_Beckon>
+    </products>
+    <researchPrerequisite>TransmutePsytrainer</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_BerserkPulse</defName>
+    <label>transmute psytrainer (berserk pulse) x1</label>
+    <description>Transmute anti-matter into psytrainer (berserk pulse).</description>
+    <jobString>Transmuting psytrainer (berserk pulse).</jobString>
+    <products>
+      <Psytrainer_BerserkPulse>1</Psytrainer_BerserkPulse>
+    </products>
+    <researchPrerequisite>TransmutePsytrainer</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Berserk</defName>
+    <label>transmute psytrainer (berserk) x1</label>
+    <description>Transmute anti-matter into psytrainer (berserk).</description>
+    <jobString>Transmuting psytrainer (berserk).</jobString>
+    <products>
+      <Psytrainer_Berserk>1</Psytrainer_Berserk>
+    </products>
+    <researchPrerequisite>TransmutePsytrainer</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_BlindingPulse</defName>
+    <label>transmute psytrainer (blinding pulse) x1</label>
+    <description>Transmute anti-matter into psytrainer (blinding pulse).</description>
+    <jobString>Transmuting psytrainer (blinding pulse).</jobString>
+    <products>
+      <Psytrainer_BlindingPulse>1</Psytrainer_BlindingPulse>
+    </products>
+    <researchPrerequisite>TransmutePsytrainer</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Burden</defName>
+    <label>transmute psytrainer (burden) x1</label>
+    <description>Transmute anti-matter into psytrainer (burden).</description>
+    <jobString>Transmuting psytrainer (burden).</jobString>
+    <products>
+      <Psytrainer_Burden>1</Psytrainer_Burden>
+    </products>
+    <researchPrerequisite>TransmutePsytrainer</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_ChaosSkip</defName>
+    <label>transmute psytrainer (chaos skip) x1</label>
+    <description>Transmute anti-matter into psytrainer (chaos skip).</description>
+    <jobString>Transmuting psytrainer (chaos skip).</jobString>
+    <products>
+      <Psytrainer_ChaosSkip>1</Psytrainer_ChaosSkip>
+      </products>
+    <researchPrerequisite>TransmutePsytrainer</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Farskip</defName>
+    <label>transmute psytrainer (farskip) x1</label>
+    <description>Transmute anti-matter into psytrainer (farskip).</description>
+    <jobString>Transmuting psytrainer (farskip).</jobString>
+    <products>
+      <Psytrainer_Farskip>1</Psytrainer_Farskip>
+    </products>
+    <researchPrerequisite>TransmutePsytrainer</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Flashstorm</defName>
+    <label>transmute psytrainer (flashstorm) x1</label>
+    <description>Transmute anti-matter into psytrainer (flashstorm).</description>
+    <jobString>Transmuting psytrainer (flashstorm).</jobString>
+    <products>
+      <Psytrainer_Flashstorm>1</Psytrainer_Flashstorm>
+    </products>
+    <researchPrerequisite>TransmutePsytrainer</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Focus</defName>
+    <label>transmute psytrainer (focus) x1</label>
+    <description>Transmute anti-matter into psytrainer (focus).</description>
+    <jobString>Transmuting psytrainer (focus).</jobString>
+    <products>
+      <Psytrainer_Focus>1</Psytrainer_Focus>
+    </products>
+    <researchPrerequisite>TransmutePsytrainer</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Invisibility</defName>
+    <label>transmute psytrainer (invisibility) x1</label>
+    <description>Transmute anti-matter into psytrainer (invisibility).</description>
+    <jobString>Transmuting psytrainer (invisibility).</jobString>
+    <products>
+      <Psytrainer_Invisibility>1</Psytrainer_Invisibility>
+    </products>
+    <researchPrerequisite>TransmutePsytrainer</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_ManhunterPulse</defName>
+    <label>transmute psytrainer (manhunter pulse) x1</label>
+    <description>Transmute anti-matter into psytrainer (manhunter pulse).</description>
+    <jobString>Transmuting psytrainer (manhunter pulse).</jobString>
+    <products>
+      <Psytrainer_ManhunterPulse>1</Psytrainer_ManhunterPulse>
+    </products>
+    <researchPrerequisite>TransmutePsytrainer</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_MassChaosSkip</defName>
+    <label>transmute psytrainer (mass chaos skip) x1</label>
+    <description>Transmute anti-matter into psytrainer (mass chaos skip).</description>
+    <jobString>Transmuting psytrainer (mass chaos skip).</jobString>
+    <products>
+      <Psytrainer_MassChaosSkip>1</Psytrainer_MassChaosSkip>
+    </products>
+    <researchPrerequisite>TransmutePsytrainer</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_EntropyDump</defName>
+    <label>transmute psytrainer (neural heat dump) x1</label>
+    <description>Transmute anti-matter into psytrainer (neural heat dump).</description>
+    <jobString>Transmuting psytrainer (neural heat dump).</jobString>
+    <products>
+      <Psytrainer_EntropyDump>1</Psytrainer_EntropyDump>
+    </products>
+    <researchPrerequisite>TransmutePsytrainer</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Neuroquake</defName>
+    <label>transmute psytrainer (neuroquake) x1</label>
+    <description>Transmute anti-matter into psytrainer (neuroquake).</description>
+    <jobString>Transmuting psytrainer (neuroquake).</jobString>
+    <products>
+      <Psytrainer_Neuroquake>1</Psytrainer_Neuroquake>
+    </products>
+    <researchPrerequisite>TransmutePsytrainer</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Painblock</defName>
+    <label>transmute psytrainer (painblock) x1</label>
+    <description>Transmute anti-matter into psytrainer (painblock).</description>
+    <jobString>Transmuting psytrainer (painblock).</jobString>
+    <products>
+      <Psytrainer_Painblock>1</Psytrainer_Painblock>
+    </products>
+    <researchPrerequisite>TransmutePsytrainer</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Skip</defName>
+    <label>transmute psytrainer (skip) x1</label>
+    <description>Transmute anti-matter into psytrainer (skip).</description>
+    <jobString>Transmuting psytrainer (skip).</jobString>
+    <products>
+      <Psytrainer_Skip>1</Psytrainer_Skip>
+    </products>
+    <researchPrerequisite>TransmutePsytrainer</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_VertigoPulse</defName>
+    <label>transmute psytrainer (vertigo pulse) x1</label>
+    <description>Transmute anti-matter into psytrainer (vertigo pulse).</description>
+    <jobString>Transmuting psytrainer (vertigo pulse).</jobString>
+    <products>
+      <Psytrainer_VertigoPulse>1</Psytrainer_VertigoPulse>
+    </products>
+    <researchPrerequisite>TransmutePsytrainer</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Wallraise</defName>
+    <label>transmute psytrainer (wallraise) x1</label>
+    <description>Transmute anti-matter into psytrainer (wallraise).</description>
+    <jobString>Transmuting psytrainer (wallraise).</jobString>
+    <products>
+      <Psytrainer_Wallraise>1</Psytrainer_Wallraise>
+    </products>
+    <researchPrerequisite>TransmutePsytrainer</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Waterskip</defName>
+    <label>transmute psytrainer (waterskip) x1</label>
+    <description>Transmute anti-matter into psytrainer (waterskip).</description>
+    <jobString>Transmuting psytrainer (waterskip).</jobString>
+    <products>
+      <Psytrainer_Waterskip>1</Psytrainer_Waterskip>
+    </products>
+    <researchPrerequisite>TransmutePsytrainer</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_WordOfInspiration</defName>
+    <label>transmute psytrainer (word of inspiration) x1</label>
+    <description>Transmute anti-matter into psytrainer (word of inspiration).</description>
+    <jobString>Transmuting psytrainer (word of inspiration).</jobString>
+    <products>
+      <Psytrainer_WordOfInspiration>1</Psytrainer_WordOfInspiration>
+    </products>
+    <researchPrerequisite>TransmutePsytrainer</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_WordOfJoy</defName>
+    <label>transmute psytrainer (word of joy) x1</label>
+    <description>Transmute anti-matter into psytrainer (word of joy).</description>
+    <jobString>Transmuting psytrainer (word of joy).</jobString>
+    <products>
+      <Psytrainer_WordOfJoy>1</Psytrainer_WordOfJoy>
+    </products>
+    <researchPrerequisite>TransmutePsytrainer</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_WordOfLove</defName>
+    <label>transmute psytrainer (word of love) x1</label>
+    <description>Transmute anti-matter into psytrainer (word of love).</description>
+    <jobString>Transmuting psytrainer (word of love).</jobString>
+    <products>
+      <Psytrainer_WordOfLove>1</Psytrainer_WordOfLove>
+    </products>
+    <researchPrerequisite>TransmutePsytrainer</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_WordOfSerenity</defName>
+    <label>transmute psytrainer (word of serenity) x1</label>
+    <description>Transmute anti-matter into psytrainer (word of serenity).</description>
+    <jobString>Transmuting psytrainer (word of serenity).</jobString>
+    <products>
+      <Psytrainer_WordOfSerenity>1</Psytrainer_WordOfSerenity>
+    </products>
+    <researchPrerequisite>TransmutePsytrainer</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_WordOfTrust</defName>
+    <label>transmute psytrainer (word of trust) x1</label>
+    <description>Transmute anti-matter into psytrainer (word of trust).</description>
+    <jobString>Transmuting psytrainer (word of trust).</jobString>
+    <products>
+      <Psytrainer_WordOfTrust>1</Psytrainer_WordOfTrust>
+    </products>
+    <researchPrerequisite>TransmutePsytrainer</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Animals</defName>
+    <label>transmute skilltrainer (animals) x1</label>
+    <description>Transmute anti-matter into skilltrainer (animals).</description>
+    <jobString>Transmuting skilltrainer (animals).</jobString>
+    <products>
+      <Neurotrainer_Animals>1</Neurotrainer_Animals>
+    </products>
+    <researchPrerequisite>TransmuteSkilltrainer</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Artistic</defName>
+    <label>transmute skilltrainer (artistic) x1</label>
+    <description>Transmute anti-matter into skilltrainer (artistic).</description>
+    <jobString>Transmuting skilltrainer (artistic).</jobString>
+    <products>
+      <Neurotrainer_Artistic>1</Neurotrainer_Artistic>
+    </products>
+    <researchPrerequisite>TransmuteSkilltrainer</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Construction</defName>
+    <label>transmute skilltrainer (construction) x1</label>
+    <description>Transmute anti-matter into skilltrainer (construction).</description>
+    <jobString>Transmuting skilltrainer (construction).</jobString>
+    <products>
+      <Neurotrainer_Construction>1</Neurotrainer_Construction>
+    </products>
+    <researchPrerequisite>TransmuteSkilltrainer</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Cooking</defName>
+    <label>transmute skilltrainer (cooking) x1</label>
+    <description>Transmute anti-matter into skilltrainer (cooking).</description>
+    <jobString>Transmuting skilltrainer (cooking).</jobString>
+    <products>
+      <Neurotrainer_Cooking>1</Neurotrainer_Cooking>
+    </products>
+    <researchPrerequisite>TransmuteSkilltrainer</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Crafting</defName>
+    <label>transmute skilltrainer (crafting) x1</label>
+    <description>Transmute anti-matter into skilltrainer (crafting).</description>
+    <jobString>Transmuting skilltrainer (crafting).</jobString>
+    <products>
+      <Neurotrainer_Crafting>1</Neurotrainer_Crafting>
+    </products>
+    <researchPrerequisite>TransmuteSkilltrainer</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Intellectual</defName>
+    <label>transmute skilltrainer (intellectual) x1</label>
+    <description>Transmute anti-matter into skilltrainer (intellectual).</description>
+    <jobString>Transmuting skilltrainer (intellectual).</jobString>
+    <products>
+      <Neurotrainer_Intellectual>1</Neurotrainer_Intellectual>
+    </products>
+    <researchPrerequisite>TransmuteSkilltrainer</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Medical</defName>
+    <label>transmute skilltrainer (medical) x1</label>
+    <description>Transmute anti-matter into skilltrainer (medical).</description>
+    <jobString>Transmuting skilltrainer (medical).</jobString>
+    <products>
+      <Neurotrainer_Medicine>1</Neurotrainer_Medicine>
+    </products>
+    <researchPrerequisite>TransmuteSkilltrainer</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Melee</defName>
+    <label>transmute skilltrainer (melee) x1</label>
+    <description>Transmute anti-matter into skilltrainer (melee).</description>
+    <jobString>Transmuting skilltrainer (melee).</jobString>
+    <products>
+      <Neurotrainer_Melee>1</Neurotrainer_Melee>
+    </products>
+    <researchPrerequisite>TransmuteSkilltrainer</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Mining</defName>
+    <label>transmute skilltrainer (mining) x1</label>
+    <description>Transmute anti-matter into skilltrainer (mining).</description>
+    <jobString>Transmuting skilltrainer (mining).</jobString>
+    <products>
+      <Neurotrainer_Mining>1</Neurotrainer_Mining>
+    </products>
+    <researchPrerequisite>TransmuteSkilltrainer</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Plants</defName>
+    <label>transmute skilltrainer (plants) x1</label>
+    <description>Transmute anti-matter into skilltrainer (plants).</description>
+    <jobString>Transmuting skilltrainer (plants).</jobString>
+    <products>
+      <Neurotrainer_Plants>1</Neurotrainer_Plants>
+    </products>
+    <researchPrerequisite>TransmuteSkilltrainer</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Shooting</defName>
+    <label>transmute skilltrainer (shooting) x1</label>
+    <description>Transmute anti-matter into skilltrainer (shooting).</description>
+    <jobString>Transmuting skilltrainer (shooting).</jobString>
+    <products>
+      <Neurotrainer_Shooting>1</Neurotrainer_Shooting>
+    </products>
+    <researchPrerequisite>TransmuteSkilltrainer</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Social</defName>
+    <label>transmute skilltrainer (social) x1</label>
+    <description>Transmute anti-matter into skilltrainer (social).</description>
+    <jobString>Transmuting skilltrainer (social).</jobString>
+    <products>
+      <Neurotrainer_Social>1</Neurotrainer_Social>
+    </products>
+    <researchPrerequisite>TransmuteSkilltrainer</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_AnimalPulser</defName>
+    <label>transmute psychic animal pulser x1</label>
+    <description>Transmute anti-matter into psychic animal pulser.</description>
+    <jobString>Transmuting psychic animal pulser.</jobString>
+    <products>
+      <PsychicAnimalPulser>1</PsychicAnimalPulser>
+    </products>
+    <researchPrerequisite>TransmutePsychic</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Emanator</defName>
+    <label>transmute psychic emanator x1</label>
+    <description>Transmute anti-matter into psychic emanator.</description>
+    <jobString>Transmuting psychic emanator.</jobString>
+    <products>
+      <PsychicEmanator>1</PsychicEmanator>
+    </products>
+    <researchPrerequisite>TransmutePsychic</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Harmonizer</defName>
+    <label>transmute psychic harmonizer x1</label>
+    <description>Transmute anti-matter into psychic harmonizer.</description>
+    <jobString>Transmuting psychic harmonizer.</jobString>
+    <products>
+      <PsychicHarmonizer>1</PsychicHarmonizer>
+    </products>
+    <researchPrerequisite>TransmutePsychic</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Reader</defName>
+    <label>transmute psychic reader x1</label>
+    <description>Transmute anti-matter into psychic reader.</description>
+    <jobString>Transmuting psychic reader.</jobString>
+    <products>
+      <PsychicReader>1</PsychicReader>
+    </products>
+    <researchPrerequisite>TransmutePsychic</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Sensitizer</defName>
+    <label>transmute psychic sensitizer x1</label>
+    <description>Transmute anti-matter into psychic sensitizer.</description>
+    <jobString>Transmuting psychic sensitizer.</jobString>
+    <products>
+      <PsychicSensitizer>1</PsychicSensitizer>
+    </products>
+    <researchPrerequisite>TransmutePsychic</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_SoothePulser</defName>
+    <label>transmute psychic soothe pulser x1</label>
+    <description>Transmute anti-matter into psychic soothe pulser.</description>
+    <jobString>Transmuting psychic soothe pulser.</jobString>
+    <products>
+      <PsychicSoothePulser>1</PsychicSoothePulser>
+    </products>
+    <researchPrerequisite>TransmutePsychic</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Neuroformer</defName>
+    <label>transmute psylink neuroformer x1</label>
+    <description>Transmute anti-matter into psylink neuroformer.</description>
+    <jobString>Transmuting psylink neuroformer.</jobString>
+    <products>
+      <PsychicAmplifier>1</PsychicAmplifier>
+    </products>
+    <researchPrerequisite>TransmutePsychic</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_ArchotechArm</defName>
+    <label>transmute archotech arm x1</label>
+    <description>Transmute anti-matter into archotech arm.</description>
+    <jobString>Transmuting archotech arm.</jobString>
+    <products>
+      <ArchotechArm>1</ArchotechArm>
+    </products>
+    <researchPrerequisite>TransmuteImplant</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_ArchotechEye</defName>
+    <label>transmute archotech eye x1</label>
+    <description>Transmute anti-matter into archotech eye.</description>
+    <jobString>Transmuting archotech eye.</jobString>
+    <products>
+      <ArchotechEye>1</ArchotechEye>
+    </products>
+    <researchPrerequisite>TransmuteImplant</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_ArchotechLeg</defName>
+    <label>transmute archotech leg x1</label>
+    <description>Transmute anti-matter into archotech leg.</description>
+    <jobString>Transmuting archotech leg.</jobString>
+    <products>
+      <ArchotechLeg>1</ArchotechLeg>
+    </products>
+    <researchPrerequisite>TransmuteImplant</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Neurocalculator</defName>
+    <label>transmute neurocalculator x1</label>
+    <description>Transmute anti-matter into neurocalculator.</description>
+    <jobString>Transmuting neurocalculator.</jobString>
+    <products>
+      <Neurocalculator>1</Neurocalculator>
+    </products>
+    <researchPrerequisite>TransmuteImplant</researchPrerequisite>
   </RecipeDef>
       
   <RecipeDef>

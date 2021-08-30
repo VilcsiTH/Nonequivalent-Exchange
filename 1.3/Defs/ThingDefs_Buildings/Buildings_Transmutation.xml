@@ -37,6 +37,7 @@
       <Flammability>1.0</Flammability>
     </statBases>
     <size>(3,1)</size>
+    <tradeability>None</tradeability>
     <designationCategory>Production</designationCategory>
     <passability>PassThroughOnly</passability>
     <pathCost>50</pathCost>
@@ -95,6 +96,7 @@
       <Flammability>1.0</Flammability>
     </statBases>
     <size>(3,1)</size>
+    <tradeability>None</tradeability>
     <designationCategory>Production</designationCategory>
     <passability>PassThroughOnly</passability>
     <pathCost>50</pathCost>
@@ -153,6 +155,7 @@
       <Flammability>1.0</Flammability>
     </statBases>
     <size>(3,1)</size>
+    <tradeability>None</tradeability>
     <designationCategory>Production</designationCategory>
     <passability>PassThroughOnly</passability>
     <pathCost>50</pathCost>
@@ -198,6 +201,7 @@
     <fillPercent>0.40</fillPercent>
     <tickerType>Normal</tickerType>
     <minifiedDef>MinifiedThing</minifiedDef>
+    <tradeability>None</tradeability>
     <thingCategories>
       <li>BuildingsPower</li>
     </thingCategories>
@@ -261,6 +265,7 @@
     <fillPercent>0.40</fillPercent>
     <tickerType>Normal</tickerType>
     <minifiedDef>MinifiedThing</minifiedDef>
+    <tradeability>None</tradeability>
     <thingCategories>
       <li>BuildingsPower</li>
     </thingCategories>
@@ -328,6 +333,7 @@
       <MaxHitPoints>2650</MaxHitPoints>
       <WorkToBuild>285</WorkToBuild>
       <Flammability>0.7</Flammability>
+      <Mass>25</Mass>
     </statBases>
     <tickerType>Normal</tickerType>
     <size>(4,4)</size>
@@ -339,6 +345,11 @@
       <Steel>100</Steel>
       <ComponentIndustrial>3</ComponentIndustrial>
     </costList>
+    <thingCategories>
+      <li>BuildingsPower</li>
+    </thingCategories>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <tradeability>None</tradeability>
     <comps>
       <li Class="CompProperties_Power">
         <compClass>NonequivalentTransmutation.CompPowerPlantCollector</compClass>
@@ -355,5 +366,62 @@
       <li>EnergyCollecting</li>
     </researchPrerequisites>
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>EnergyCondenser</defName>
+    <label>energy condenser</label>
+    <description>By combining dark matter and anti-matter inside the cells of a battery, they react with each other and produce energy. The reaction doesn't seem to slow down, which means that it will keep producing energy forever.</description>
+    <graphicData>
+      <texPath>Things/Building/Power/EnergyCondenser</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2, 3)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <pathCost>42</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <passability>PassThroughOnly</passability>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <canOverlapZones>false</canOverlapZones>
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <statBases>
+      <MarketValue>0</MarketValue>
+      <MaxHitPoints>16000</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Mass>15</Mass>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <size>(1, 2)</size>
+    <thingCategories>
+      <li>BuildingsPower</li>
+    </thingCategories>
+    <costList>
+      <Steel>100</Steel>
+      <DarkMatter>100</DarkMatter>
+      <AntiMatter>100</AntiMatter>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerPlant</compClass>
+        <basePowerConsumption>-80000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+    </comps>
+    <designationCategory>Power</designationCategory>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <tradeability>None</tradeability>
+    <researchPrerequisites>
+      <li>EnergyCondensing</li>
+    </researchPrerequisites>
   </ThingDef>
 </Defs>
