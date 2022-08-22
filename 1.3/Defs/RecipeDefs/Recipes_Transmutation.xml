@@ -80,6 +80,84 @@
     </fixedIngredientFilter>
     <workSkill>Crafting</workSkill>
   </RecipeDef>
+  
+    <RecipeDef Name="CookBase" Abstract="True">
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <workAmount>75</workAmount>
+    <recipeUsers>
+      <li>StoveDarkMatter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>DarkMatter</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>DarkMatter</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+  <RecipeDef Name="CookDarkBase" Abstract="True">
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <workAmount>300</workAmount>
+    <recipeUsers>
+      <li>StoveDarkMatter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AntiMatter</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AntiMatter</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+  <RecipeDef Name="CookAntiBase" Abstract="True">
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <workAmount>1200</workAmount>
+    <recipeUsers>
+      <li>StoveDarkMatter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AntiMatter</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AntiMatter</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
 
   <RecipeDef>
     <defName>Transmute_DarkMatter</defName>
@@ -389,9 +467,10 @@
     <products>
       <Dye>75</Dye>
     </products>
+    <researchPrerequisite>TransmutePlant</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteBase">
+  <RecipeDef ParentName="CookBase">
     <defName>Transmute_Hops</defName>
     <label>transmute hops x75</label>
     <description>Transmute dark matter into hops.</description>
@@ -399,9 +478,10 @@
     <products>
       <RawHops>75</RawHops>
     </products>
+    <researchPrerequisite>TransmutePlant</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteBase">
+  <RecipeDef ParentName="CookBase">
     <defName>Transmute_Psychoid</defName>
     <label>transmute psychoid leaves x75</label>
     <description>Transmute dark matter into psychoid leaves.</description>
@@ -409,9 +489,10 @@
     <products>
       <PsychoidLeaves>75</PsychoidLeaves>
     </products>
+    <researchPrerequisite>TransmutePlant</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteBase">
+  <RecipeDef ParentName="CookBase">
     <defName>Transmute_Smokeleaf</defName>
     <label>transmute smokeleaf leaves x75</label>
     <description>Transmute dark matter into smokeleaf leaves.</description>
@@ -419,9 +500,10 @@
     <products>
       <SmokeleafLeaves>75</SmokeleafLeaves>
     </products>
+    <researchPrerequisite>TransmutePlant</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_Ambrosia</defName>
     <label>transmute ambrosia x400</label>
     <description>Transmute anti-matter into ambrosia.</description>
@@ -432,7 +514,7 @@
     <researchPrerequisite>TransmuteDrug</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteAntiBase">
+  <RecipeDef ParentName="CookAntiBase">
     <defName>Transmute_Beer</defName>
     <label>transmute beer x25</label>
     <description>Transmute anti-matter into beer.</description>
@@ -548,7 +630,7 @@
     <description>Transmute anti-matter into gauranlen seed.</description>
     <jobString>Transmuting gauranlen seed.</jobString>
     <products>
-      <GauranlenSeed>75</GauranlenSeed>
+      <GauranlenSeed>1</GauranlenSeed>
     </products>
     <researchPrerequisite>TransmutePlant</researchPrerequisite>
   </RecipeDef>
@@ -615,7 +697,7 @@
     </products>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_Agave</defName>
     <label>transmute agave fruit x75</label>
     <description>Transmute anti-matter into agave fruit.</description>
@@ -625,7 +707,7 @@
     </products>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_Berries</defName>
     <label>transmute berries x75</label>
     <description>Transmute anti-matter into berries.</description>
@@ -636,7 +718,7 @@
     <researchPrerequisite>TransmutePlant</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_Corn</defName>
     <label>transmute corn x75</label>
     <description>Transmute anti-matter into corn.</description>
@@ -647,7 +729,7 @@
     <researchPrerequisite>TransmutePlant</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_Hay</defName>
     <label>transmute hay x75</label>
     <description>Transmute anti-matter into hay.</description>
@@ -658,7 +740,7 @@
     <researchPrerequisite>TransmutePlant</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_Potato</defName>
     <label>transmute potatoes x75</label>
     <description>Transmute anti-matter into potatoes.</description>
@@ -669,7 +751,7 @@
     <researchPrerequisite>TransmutePlant</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_Fungus</defName>
     <label>transmute raw fungus x75</label>
     <description>Transmute anti-matter into raw fungus.</description>
@@ -680,7 +762,7 @@
     <researchPrerequisite>TransmutePlant</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_Rice</defName>
     <label>transmute rice x75</label>
     <description>Transmute anti-matter into rice.</description>
@@ -691,7 +773,7 @@
     <researchPrerequisite>TransmutePlant</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_MeatAlpaca</defName>
     <label>transmute alpaca meat x75</label>
     <description>Transmute anti-matter into alpaca meat.</description>
@@ -702,7 +784,7 @@
     <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_MeatAlphabeaver</defName>
     <label>transmute alphabeaver meat x75</label>
     <description>Transmute anti-matter into alphabeaver meat.</description>
@@ -713,7 +795,7 @@
     <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_MeatBear</defName>
     <label>transmute bear meat x75</label>
     <description>Transmute anti-matter into bear meat.</description>
@@ -724,7 +806,7 @@
     <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_Beef</defName>
     <label>transmute beef x75</label>
     <description>Transmute anti-matter into beef.</description>
@@ -734,7 +816,7 @@
     </products>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_MeatBird</defName>
     <label>transmute bird meat x75</label>
     <description>Transmute anti-matter into bird meat.</description>
@@ -745,7 +827,7 @@
     <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_MeatBison</defName>
     <label>transmute bison meat x75</label>
     <description>Transmute anti-matter into bison meat.</description>
@@ -756,7 +838,7 @@
     <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_MeatBoomalope</defName>
     <label>transmute boomalope meat x75</label>
     <description>Transmute anti-matter into boomalope meat.</description>
@@ -767,7 +849,7 @@
     <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_MeatBoomrat</defName>
     <label>transmute boomrat meat x75</label>
     <description>Transmute anti-matter into boomrat meat.</description>
@@ -778,7 +860,7 @@
     <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_MeatCapybara</defName>
     <label>transmute capybara meat x75</label>
     <description>Transmute anti-matter into capybara meat.</description>
@@ -789,7 +871,7 @@
     <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_MeatCaribou</defName>
     <label>transmute caribou meat x75</label>
     <description>Transmute anti-matter into caribou meat.</description>
@@ -800,7 +882,7 @@
     <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_MeatCat</defName>
     <label>transmute cat meat x75</label>
     <description>Transmute anti-matter into cat meat.</description>
@@ -811,7 +893,7 @@
     <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_MeatChicken</defName>
     <label>transmute chicken meat x75</label>
     <description>Transmute anti-matter into chicken meat.</description>
@@ -819,9 +901,10 @@
     <products>
       <Meat_Chicken>75</Meat_Chicken>
     </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_MeatChinchilla</defName>
     <label>transmute chinchilla meat x75</label>
     <description>Transmute anti-matter into chinchilla meat.</description>
@@ -832,7 +915,7 @@
     <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_MeatCobra</defName>
     <label>transmute cobra meat x75</label>
     <description>Transmute anti-matter into cobra meat.</description>
@@ -843,7 +926,7 @@
     <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_MeatCougar</defName>
     <label>transmute cougar meat x75</label>
     <description>Transmute anti-matter into cougar meat.</description>
@@ -854,7 +937,7 @@
     <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_MeatDonkey</defName>
     <label>transmute donkey meat x75</label>
     <description>Transmute anti-matter into donkey meat.</description>
@@ -865,7 +948,7 @@
     <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_MeatDromedary</defName>
     <label>transmute dromedary meat x75</label>
     <description>Transmute anti-matter into dromedary meat.</description>
@@ -876,7 +959,7 @@
     <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_MeatDuck</defName>
     <label>transmute duck meat x75</label>
     <description>Transmute anti-matter into duck meat.</description>
@@ -887,7 +970,7 @@
     <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_MeatElephant</defName>
     <label>transmute elephant meat x75</label>
     <description>Transmute anti-matter into elephant meat.</description>
@@ -898,7 +981,7 @@
     <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_MeatElk</defName>
     <label>transmute elk meat x75</label>
     <description>Transmute anti-matter into elk meat.</description>
@@ -909,7 +992,7 @@
     <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_MeatFox</defName>
     <label>transmute fox meat x75</label>
     <description>Transmute anti-matter into fox meat.</description>
@@ -920,7 +1003,7 @@
     <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_MeatGazelle</defName>
     <label>transmute gazelle meat x75</label>
     <description>Transmute anti-matter into gazelle meat.</description>
@@ -931,7 +1014,7 @@
     <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_MeatGoat</defName>
     <label>transmute goat meat x75</label>
     <description>Transmute anti-matter into goat meat.</description>
@@ -942,7 +1025,7 @@
     <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_MeatGuineaPig</defName>
     <label>transmute guinea pig meat x75</label>
     <description>Transmute anti-matter into guinea pig meat.</description>
@@ -953,7 +1036,7 @@
     <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_MeatHare</defName>
     <label>transmute hare meat x75</label>
     <description>Transmute anti-matter into hare meat.</description>
@@ -964,7 +1047,7 @@
     <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_MeatHorse</defName>
     <label>transmute horse meat x75</label>
     <description>Transmute anti-matter into horse meat.</description>
@@ -975,7 +1058,7 @@
     <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_MeatHuman</defName>
     <label>transmute human meat x75</label>
     <description>Transmute anti-matter into human meat.</description>
@@ -986,7 +1069,7 @@
     <researchPrerequisite>TransmuteHuman</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_MeatHusky</defName>
     <label>transmute husky meat x75</label>
     <description>Transmute anti-matter into husky meat.</description>
@@ -997,7 +1080,7 @@
     <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_MeatIbex</defName>
     <label>transmute ibex meat x75</label>
     <description>Transmute anti-matter into ibex meat.</description>
@@ -1008,7 +1091,7 @@
     <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_MeatIguana</defName>
     <label>transmute iguana meat x75</label>
     <description>Transmute anti-matter into iguana meat.</description>
@@ -1019,7 +1102,7 @@
     <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_MeatDryad</defName>
     <label>transmute immature dryad meat x75</label>
     <description>Transmute anti-matter into immature dryad meat.</description>
@@ -1030,7 +1113,7 @@
     <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_MeatInsect</defName>
     <label>transmute insect meat x75</label>
     <description>Transmute anti-matter into insect meat.</description>
@@ -1041,7 +1124,7 @@
     <researchPrerequisite>TransmuteInsect</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_MeatLabrador</defName>
     <label>transmute labrador retriever meat x75</label>
     <description>Transmute anti-matter into labrador retriever meat.</description>
@@ -1052,7 +1135,7 @@
     <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_MeatLynx</defName>
     <label>transmute lynx meat x75</label>
     <description>Transmute anti-matter into lynx meat.</description>
@@ -1063,7 +1146,7 @@
     <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_MeatMegasloth</defName>
     <label>transmute megasloth meat x75</label>
     <description>Transmute anti-matter into megasloth meat.</description>
@@ -1074,7 +1157,7 @@
     <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_MeatMonkey</defName>
     <label>transmute monkey meat x75</label>
     <description>Transmute anti-matter into monkey meat.</description>
@@ -1085,7 +1168,7 @@
     <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_MeatMuffalo</defName>
     <label>transmute muffalo meat x75</label>
     <description>Transmute anti-matter into muffalo meat.</description>
@@ -1096,7 +1179,7 @@
     <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_MeatPanther</defName>
     <label>transmute panther meat x75</label>
     <description>Transmute anti-matter into panther meat.</description>
@@ -1107,7 +1190,7 @@
     <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_Pork</defName>
     <label>transmute pork x75</label>
     <description>Transmute anti-matter into pork.</description>
@@ -1115,9 +1198,10 @@
     <products>
       <Meat_Pig>75</Meat_Pig>
     </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_MeatRaccoon</defName>
     <label>transmute raccoon meat x75</label>
     <description>Transmute anti-matter into raccoon meat.</description>
@@ -1128,7 +1212,7 @@
     <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_MeatRat</defName>
     <label>transmute rat meat x75</label>
     <description>Transmute anti-matter into rat meat.</description>
@@ -1139,7 +1223,7 @@
     <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_MeatRhinoceros</defName>
     <label>transmute rhinoceros meat x75</label>
     <description>Transmute anti-matter into rhinoceros meat.</description>
@@ -1150,7 +1234,7 @@
     <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_MeatSheep</defName>
     <label>transmute sheep meat x75</label>
     <description>Transmute anti-matter into sheep meat.</description>
@@ -1161,7 +1245,7 @@
     <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_MeatSquirrel</defName>
     <label>transmute squirrel meat x75</label>
     <description>Transmute anti-matter into squirrel meat.</description>
@@ -1172,7 +1256,7 @@
     <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_MeatThrumbo</defName>
     <label>transmute thrumbo meat x75</label>
     <description>Transmute anti-matter into thrumbo meat.</description>
@@ -1183,7 +1267,7 @@
     <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_MeatTurkey</defName>
     <label>transmute turkey meat x75</label>
     <description>Transmute anti-matter into turkey meat.</description>
@@ -1194,7 +1278,7 @@
     <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_Venison</defName>
     <label>transmute venison x75</label>
     <description>Transmute anti-matter into venison.</description>
@@ -1202,9 +1286,10 @@
     <products>
       <Meat_Deer>75</Meat_Deer>
     </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_MeatWarg</defName>
     <label>transmute warg meat x75</label>
     <description>Transmute anti-matter into warg meat.</description>
@@ -1215,7 +1300,7 @@
     <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_MeatWolf</defName>
     <label>transmute wolf meat x75</label>
     <description>Transmute anti-matter into wolf meat.</description>
@@ -1226,7 +1311,7 @@
     <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_MeatYak</defName>
     <label>transmute yak meat x75</label>
     <description>Transmute anti-matter into yak meat.</description>
@@ -1237,7 +1322,7 @@
     <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_MeatYorkshire</defName>
     <label>transmute yorkshire terrier meat x75</label>
     <description>Transmute anti-matter into yorkshire terrier meat.</description>
@@ -1248,7 +1333,7 @@
     <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_EggChicken</defName>
     <label>transmute chicken egg (unfert.) x75</label>
     <description>Transmute anti-matter into chicken egg (unfert.).</description>
@@ -1259,7 +1344,7 @@
     <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_EggDuck</defName>
     <label>transmute duck egg (unfert.) x75</label>
     <description>Transmute anti-matter into duck egg (unfert.).</description>
@@ -1270,7 +1355,7 @@
     <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_EggGoose</defName>
     <label>transmute goose egg (unfert.) x75</label>
     <description>Transmute anti-matter into goose egg (unfert.).</description>
@@ -1281,7 +1366,7 @@
     <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
   
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_Milk</defName>
     <label>transmute milk x75</label>
     <description>Transmute anti-matter into milk.</description>
@@ -1292,7 +1377,7 @@
     <researchPrerequisite>TransmuteMeat</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_Jelly</defName>
     <label>transmute insect jelly x75</label>
     <description>Transmute anti-matter into insect jelly.</description>
@@ -1303,7 +1388,7 @@
     <researchPrerequisite>TransmuteInsect</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_Kibble</defName>
     <label>transmute kibble x75</label>
     <description>Transmute anti-matter into kibble.</description>
@@ -1314,7 +1399,7 @@
     <researchPrerequisite>TransmuteKibble</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_Pemmican</defName>
     <label>transmute pemmican x75</label>
     <description>Transmute anti-matter into pemmican.</description>
@@ -1325,7 +1410,7 @@
     <researchPrerequisite>TransmutePemmican</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteDarkBase">
+  <RecipeDef ParentName="CookDarkBase">
     <defName>Transmute_Simple</defName>
     <label>transmute simple meal x10</label>
     <description>Transmute anti-matter into simple meal.</description>
@@ -1336,7 +1421,7 @@
     <researchPrerequisite>TransmuteMeal</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteAntiBase">
+  <RecipeDef ParentName="CookAntiBase">
     <defName>Transmute_Fine</defName>
     <label>transmute fine meal x10</label>
     <description>Transmute anti-matter into fine meal.</description>
@@ -1347,7 +1432,7 @@
     <researchPrerequisite>TransmuteMeal</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteAntiBase">
+  <RecipeDef ParentName="CookAntiBase">
     <defName>Transmute_FineVeg</defName>
     <label>transmute vegetarian fine meal x10</label>
     <description>Transmute anti-matter into vegetarian fine meal.</description>
@@ -1358,7 +1443,7 @@
     <researchPrerequisite>TransmuteMeal</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteAntiBase">
+  <RecipeDef ParentName="CookAntiBase">
     <defName>Transmute_FineMeat</defName>
     <label>transmute carnivore fine meal x10</label>
     <description>Transmute anti-matter into carnivore fine meal.</description>
@@ -1369,7 +1454,7 @@
     <researchPrerequisite>TransmuteMeal</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteAntiBase">
+  <RecipeDef ParentName="CookAntiBase">
     <defName>Transmute_Lavish</defName>
     <label>transmute lavish meal x10</label>
     <description>Transmute anti-matter into lavish meal.</description>
@@ -1380,7 +1465,7 @@
     <researchPrerequisite>TransmuteLavish</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteAntiBase">
+  <RecipeDef ParentName="CookAntiBase">
     <defName>Transmute_LavishVeg</defName>
     <label>transmute vegetarian lavish meal x10</label>
     <description>Transmute anti-matter into vegetarian lavish meal.</description>
@@ -1391,7 +1476,7 @@
     <researchPrerequisite>TransmuteLavish</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteAntiBase">
+  <RecipeDef ParentName="CookAntiBase">
     <defName>Transmute_LavishMeat</defName>
     <label>transmute carnivore lavish meal x10</label>
     <description>Transmute anti-matter into carnivore lavish meal.</description>
@@ -1402,7 +1487,7 @@
     <researchPrerequisite>TransmuteLavish</researchPrerequisite>
   </RecipeDef>
 
-  <RecipeDef ParentName="TransmuteAntiBase">
+  <RecipeDef ParentName="CookAntiBase">
     <defName>Transmute_SurvivalMeal</defName>
     <label>transmute packaged survival meal x10</label>
     <description>Transmute anti-matter into packaged survival meal.</description>

@@ -8,7 +8,7 @@
     <techLevel>Neolithic</techLevel>
     <tab>TransmutationTab</tab>
     <researchViewX>0.00</researchViewX>
-    <researchViewY>2.40</researchViewY>
+    <researchViewY>2.50</researchViewY>
     <techprintCount>1</techprintCount>
     <techprintCommonality>0</techprintCommonality>
     <techprintMarketValue>0</techprintMarketValue>
@@ -25,7 +25,7 @@
     <techLevel>Medieval</techLevel>
     <tab>TransmutationTab</tab>
     <researchViewX>1.00</researchViewX>
-    <researchViewY>2.40</researchViewY>
+    <researchViewY>2.50</researchViewY>
     <prerequisites>
       <li>Alchemy</li>
     </prerequisites>
@@ -38,6 +38,20 @@
   </ResearchProjectDef>
 
   <ResearchProjectDef>
+    <defName>DarkmatterCooking</defName>
+    <label>dark matter stove</label>
+    <description>Build dark matter stoves in order to transmutate nutrients.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>TransmutationTab</tab>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>4.00</researchViewY>
+    <prerequisites>
+      <li>DarkmatterAlchemy</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
     <defName>TransmuteTextile</defName>
     <label>textile transmutation</label>
     <description>Start research on textiles such as wool and leather. Unlocks access to wool and leather transmutation researches, aswell as gaining the ability to transmute sheep wool and patchleather.</description>
@@ -45,7 +59,7 @@
     <techLevel>Medieval</techLevel>
     <tab>TransmutationTab</tab>
     <researchViewX>2.00</researchViewX>
-    <researchViewY>1.20</researchViewY>
+    <researchViewY>2.00</researchViewY>
     <prerequisites>
       <li>DarkmatterAlchemy</li>
     </prerequisites>
@@ -59,7 +73,7 @@
     <techLevel>Medieval</techLevel>
     <tab>TransmutationTab</tab>
     <researchViewX>3.00</researchViewX>
-    <researchViewY>0.60</researchViewY>
+    <researchViewY>1.00</researchViewY>
     <prerequisites>
       <li>TransmuteTextile</li>
     </prerequisites>
@@ -73,7 +87,7 @@
     <techLevel>Medieval</techLevel>
     <tab>TransmutationTab</tab>
     <researchViewX>3.00</researchViewX>
-    <researchViewY>1.20</researchViewY>
+    <researchViewY>1.50</researchViewY>
     <prerequisites>
       <li>TransmuteTextile</li>
     </prerequisites>
@@ -82,14 +96,14 @@
   <ResearchProjectDef>
     <defName>TransmuteHuman</defName>
     <label>human transmutation</label>
-    <description>Transmute human leather and human meat.</description>
+    <description>Transmute human leather, from the transmutation table, and human meat, from the dark matter stove.</description>
     <baseCost>50</baseCost>
     <techLevel>Medieval</techLevel>
     <tab>TransmutationTab</tab>
-    <researchViewX>2.00</researchViewX>
-    <researchViewY>3.60</researchViewY>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>4.50</researchViewY>
     <prerequisites>
-      <li>DarkmatterAlchemy</li>
+      <li>DarkmatterCooking</li>
     </prerequisites>
   </ResearchProjectDef>
 
@@ -100,10 +114,10 @@
     <baseCost>20</baseCost>
     <techLevel>Medieval</techLevel>
     <tab>TransmutationTab</tab>
-    <researchViewX>2.00</researchViewX>
-    <researchViewY>3.20</researchViewY>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>5.00</researchViewY>
     <prerequisites>
-      <li>DarkmatterAlchemy</li>
+      <li>DarkmatterCooking</li>
     </prerequisites>
   </ResearchProjectDef>
 
@@ -115,7 +129,7 @@
     <techLevel>Ultra</techLevel>
     <tab>TransmutationTab</tab>
     <researchViewX>3.00</researchViewX>
-    <researchViewY>1.80</researchViewY>
+    <researchViewY>2.00</researchViewY>
     <prerequisites>
       <li>TransmuteTextile</li>
       <li>MicroelectronicsBasics</li>
@@ -133,10 +147,10 @@
     <baseCost>100</baseCost>
     <techLevel>Medieval</techLevel>
     <tab>TransmutationTab</tab>
-    <researchViewX>3.00</researchViewX>
-    <researchViewY>3.20</researchViewY>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>4.50</researchViewY>
     <prerequisites>
-      <li>DarkmatterAlchemy</li>
+      <li>DarkmatterCooking</li>
     </prerequisites>
   </ResearchProjectDef>
 
@@ -147,10 +161,10 @@
     <baseCost>25</baseCost>
     <techLevel>Medieval</techLevel>
     <tab>TransmutationTab</tab>
-    <researchViewX>2.00</researchViewX>
-    <researchViewY>4.20</researchViewY>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>4.00</researchViewY>
     <prerequisites>
-      <li>DarkmatterAlchemy</li>
+      <li>DarkmatterCooking</li>
     </prerequisites>
   </ResearchProjectDef>
 
@@ -161,10 +175,10 @@
     <baseCost>100</baseCost>
     <techLevel>Medieval</techLevel>
     <tab>TransmutationTab</tab>
-    <researchViewX>3.00</researchViewX>
+    <researchViewX>4.00</researchViewX>
     <researchViewY>4.00</researchViewY>
     <prerequisites>
-      <li>DarkmatterAlchemy</li>
+      <li>DarkmatterCooking</li>
     </prerequisites>
   </ResearchProjectDef>
 
@@ -175,10 +189,10 @@
     <baseCost>1500</baseCost>
     <techLevel>Medieval</techLevel>
     <tab>TransmutationTab</tab>
-    <researchViewX>3.00</researchViewX>
-    <researchViewY>4.80</researchViewY>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>3.00</researchViewY>
     <prerequisites>
-      <li>DarkmatterAlchemy</li>
+      <li>DarkmatterCooking</li>
     </prerequisites>
   </ResearchProjectDef>
 
@@ -189,10 +203,10 @@
     <baseCost>250</baseCost>
     <techLevel>Medieval</techLevel>
     <tab>TransmutationTab</tab>
-    <researchViewX>2.00</researchViewX>
-    <researchViewY>4.80</researchViewY>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>3.00</researchViewY>
     <prerequisites>
-      <li>DarkmatterAlchemy</li>
+      <li>DarkmatterCooking</li>
       <li>Pemmican</li>
     </prerequisites>
   </ResearchProjectDef>
@@ -205,7 +219,7 @@
     <techLevel>Industrial</techLevel>
     <tab>TransmutationTab</tab>
     <researchViewX>4.00</researchViewX>
-    <researchViewY>4.00</researchViewY>
+    <researchViewY>5.00</researchViewY>
     <prerequisites>
       <li>DarkmatterAlchemy</li>
       <li>MedicineProduction</li>
@@ -221,7 +235,7 @@
     <baseCost>2000</baseCost>
     <techLevel>Industrial</techLevel>
     <tab>TransmutationTab</tab>
-    <researchViewX>3.00</researchViewX>
+    <researchViewX>2.00</researchViewX>
     <researchViewY>0.00</researchViewY>
     <prerequisites>
       <li>DarkmatterAlchemy</li>
@@ -239,7 +253,7 @@
     <techLevel>Industrial</techLevel>
     <tab>TransmutationTab</tab>
     <researchViewX>2.00</researchViewX>
-    <researchViewY>0.00</researchViewY>
+    <researchViewY>1.00</researchViewY>
     <prerequisites>
       <li>DarkmatterAlchemy</li>
       <li>SolarPanels</li>
@@ -255,10 +269,10 @@
     <baseCost>1500</baseCost>
     <techLevel>Industrial</techLevel>
     <tab>TransmutationTab</tab>
-    <researchViewX>4.00</researchViewX>
-    <researchViewY>3.20</researchViewY>
+    <researchViewX>5.00</researchViewX>
+    <researchViewY>4.50</researchViewY>
     <prerequisites>
-      <li>DarkmatterAlchemy</li>
+      <li>TransmutePlant</li>
       <li>Brewing</li>
       <li>PsychiteRefining</li>
       <li>GoJuiceProduction</li>
@@ -274,8 +288,8 @@
     <baseCost>2500</baseCost>
     <techLevel>Spacer</techLevel>
     <tab>TransmutationTab</tab>
-    <researchViewX>3.00</researchViewX>
-    <researchViewY>2.40</researchViewY>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>2.50</researchViewY>
     <prerequisites>
       <li>DarkmatterAlchemy</li>
       <li>MicroelectronicsBasics</li>
@@ -296,8 +310,8 @@
     <baseCost>4000</baseCost>
     <techLevel>Ultra</techLevel>
     <tab>TransmutationTab</tab>
-    <researchViewX>5.00</researchViewX>
-    <researchViewY>0.80</researchViewY>
+    <researchViewX>6.00</researchViewX>
+    <researchViewY>3.00</researchViewY>
     <prerequisites>
       <li>AntimatterAlchemy</li>
       <li>MicroelectronicsBasics</li>
@@ -312,8 +326,8 @@
     <baseCost>4500</baseCost>
     <techLevel>Ultra</techLevel>
     <tab>TransmutationTab</tab>
-    <researchViewX>5.00</researchViewX>
-    <researchViewY>1.60</researchViewY>
+    <researchViewX>6.00</researchViewX>
+    <researchViewY>2.00</researchViewY>
     <prerequisites>
       <li>AntimatterAlchemy</li>
       <li>MicroelectronicsBasics</li>
@@ -328,8 +342,8 @@
     <baseCost>5500</baseCost>
     <techLevel>Ultra</techLevel>
     <tab>TransmutationTab</tab>
-    <researchViewX>5.00</researchViewX>
-    <researchViewY>2.40</researchViewY>
+    <researchViewX>6.00</researchViewX>
+    <researchViewY>1.00</researchViewY>
     <prerequisites>
       <li>AntimatterAlchemy</li>
       <li>MicroelectronicsBasics</li>
@@ -344,7 +358,7 @@
     <baseCost>5000</baseCost>
     <techLevel>Archotech</techLevel>
     <tab>TransmutationTab</tab>
-    <researchViewX>5.00</researchViewX>
+    <researchViewX>6.00</researchViewX>
     <researchViewY>4.00</researchViewY>
     <prerequisites>
       <li>AntimatterAlchemy</li>
@@ -360,10 +374,12 @@
     <baseCost>2000</baseCost>
     <techLevel>Ultra</techLevel>
     <tab>TransmutationTab</tab>
-    <researchViewX>5.00</researchViewX>
-    <researchViewY>3.20</researchViewY>
+    <researchViewX>6.00</researchViewX>
+    <researchViewY>5.50</researchViewY>
     <prerequisites>
       <li>AntimatterAlchemy</li>
+      <li>TransmuteDrug</li>
+      <li>TransmuteMedicine</li>
       <li>PenoxycylineProduction</li>
       <li>MicroelectronicsBasics</li>
     </prerequisites>
@@ -378,9 +394,10 @@
     <techLevel>Spacer</techLevel>
     <tab>TransmutationTab</tab>
     <researchViewX>5.00</researchViewX>
-    <researchViewY>4.80</researchViewY>
+    <researchViewY>3.00</researchViewY>
     <prerequisites>
       <li>AntimatterAlchemy</li>
+      <li>TransmuteMeal</li>
       <li>MicroelectronicsBasics</li>
     </prerequisites>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -393,10 +410,11 @@
     <baseCost>2000</baseCost>
     <techLevel>Spacer</techLevel>
     <tab>TransmutationTab</tab>
-    <researchViewX>4.00</researchViewX>
-    <researchViewY>4.80</researchViewY>
+    <researchViewX>5.00</researchViewX>
+    <researchViewY>3.50</researchViewY>
     <prerequisites>
       <li>AntimatterAlchemy</li>
+      <li>TransmuteMeal</li>
       <li>PackagedSurvivalMeal</li>
       <li>MicroelectronicsBasics</li>
     </prerequisites>
@@ -410,7 +428,7 @@
     <baseCost>3000</baseCost>
     <techLevel>Spacer</techLevel>
     <tab>TransmutationTab</tab>
-    <researchViewX>4.00</researchViewX>
+    <researchViewX>5.00</researchViewX>
     <researchViewY>0.00</researchViewY>
     <prerequisites>
       <li>AntimatterAlchemy</li>
@@ -431,7 +449,7 @@
     <techLevel>Archotech</techLevel>
     <tab>TransmutationTab</tab>
     <researchViewX>5.00</researchViewX>
-    <researchViewY>0.00</researchViewY>
+    <researchViewY>1.00</researchViewY>
     <prerequisites>
       <li>AntimatterAlchemy</li>
       <li>Batteries</li>
