@@ -187,7 +187,7 @@
       <li>AntimatterAlchemy</li>
     </researchPrerequisites>
   </ThingDef>
-  
+
   <ThingDef ParentName="BenchBase">
     <defName>StoveDarkMatter</defName>
     <label>dark matter stove</label>
@@ -226,6 +226,7 @@
       <Flammability>1.0</Flammability>
     </statBases>
     <size>(3,1)</size>
+    <tradeability>None</tradeability>
     <designationCategory>Production</designationCategory>
     <passability>PassThroughOnly</passability>
     <pathCost>50</pathCost>
@@ -248,16 +249,16 @@
         <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
       </li>
     </comps>
-    <placeWorkers>
-      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
-    </placeWorkers>
     <building>
-      <isMealSource>true</isMealSource>
       <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+      <isMealSource>true</isMealSource>
       <buildingTags>
         <li>Production</li>
       </buildingTags>
     </building>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
     <researchPrerequisites>
       <li>DarkmatterCooking</li>
     </researchPrerequisites>
