@@ -2212,6 +2212,17 @@
     </products>
     <researchPrerequisite>TransmuteSkilltrainer</researchPrerequisite>
   </RecipeDef>
+  
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Techprof</defName>
+    <label>transmute techprof subpersona core x1</label>
+    <description>Transmute anti-matter into techprof subpersona core.</description>
+    <jobString>Transmuting techprof subpersona core.</jobString>
+    <products>
+      <TechprofSubpersonaCore>1</TechprofSubpersonaCore>
+    </products>
+    <researchPrerequisite>TransmuteExotic</researchPrerequisite>
+  </RecipeDef>
 
   <RecipeDef ParentName="TransmuteAntiBase">
     <defName>Transmute_AnimalPulser</defName>

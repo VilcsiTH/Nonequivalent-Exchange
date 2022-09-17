@@ -223,7 +223,6 @@
     <prerequisites>
       <li>DarkmatterAlchemy</li>
       <li>MedicineProduction</li>
-      <li>MicroelectronicsBasics</li>
     </prerequisites>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
   </ResearchProjectDef>
@@ -270,7 +269,7 @@
     <techLevel>Industrial</techLevel>
     <tab>TransmutationTab</tab>
     <researchViewX>5.00</researchViewX>
-    <researchViewY>4.50</researchViewY>
+    <researchViewY>5.00</researchViewY>
     <prerequisites>
       <li>TransmutePlant</li>
       <li>Brewing</li>
@@ -307,13 +306,13 @@
     <defName>TransmutePsychic</defName>
     <label>psychic item transmutation</label>
     <description>Transmute all kinds of psychic items from the transmutation table.</description>
-    <baseCost>4000</baseCost>
+    <baseCost>1000</baseCost>
     <techLevel>Ultra</techLevel>
     <tab>TransmutationTab</tab>
     <researchViewX>6.00</researchViewX>
     <researchViewY>3.00</researchViewY>
     <prerequisites>
-      <li>AntimatterAlchemy</li>
+      <li>TransmuteExotic</li>
       <li>MicroelectronicsBasics</li>
     </prerequisites>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -323,13 +322,13 @@
     <defName>TransmutePsytrainer</defName>
     <label>psytrainer transmutation</label>
     <description>Transmute psytrainers of all kinds from the transmutation table.</description>
-    <baseCost>4500</baseCost>
+    <baseCost>1500</baseCost>
     <techLevel>Ultra</techLevel>
     <tab>TransmutationTab</tab>
     <researchViewX>6.00</researchViewX>
     <researchViewY>2.00</researchViewY>
     <prerequisites>
-      <li>AntimatterAlchemy</li>
+      <li>TransmuteExotic</li>
       <li>MicroelectronicsBasics</li>
     </prerequisites>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -339,13 +338,13 @@
     <defName>TransmuteSkilltrainer</defName>
     <label>skilltrainer transmutation</label>
     <description>Transmute skilltrainers of all kinds from the transmutation table.</description>
-    <baseCost>5500</baseCost>
+    <baseCost>2500</baseCost>
     <techLevel>Ultra</techLevel>
     <tab>TransmutationTab</tab>
     <researchViewX>6.00</researchViewX>
     <researchViewY>1.00</researchViewY>
     <prerequisites>
-      <li>AntimatterAlchemy</li>
+      <li>TransmuteExotic</li>
       <li>MicroelectronicsBasics</li>
     </prerequisites>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -355,11 +354,27 @@
     <defName>TransmuteImplant</defName>
     <label>implant transmutation</label>
     <description>Transmute implants of all kinds from the transmutation table.</description>
-    <baseCost>5000</baseCost>
+    <baseCost>2000</baseCost>
     <techLevel>Archotech</techLevel>
     <tab>TransmutationTab</tab>
     <researchViewX>6.00</researchViewX>
     <researchViewY>4.00</researchViewY>
+    <prerequisites>
+      <li>TransmuteExotic</li>
+      <li>NeuralComputation</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>TransmuteExotic</defName>
+    <label>exotic item transmutation</label>
+    <description>Transmute exotic items from the transmutation table.</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Archotech</techLevel>
+    <tab>TransmutationTab</tab>
+    <researchViewX>5.00</researchViewX>
+    <researchViewY>2.00</researchViewY>
     <prerequisites>
       <li>AntimatterAlchemy</li>
       <li>MicroelectronicsBasics</li>
@@ -371,7 +386,7 @@
     <defName>TransmuteMedical</defName>
     <label>medical drug transmutation</label>
     <description>Transmute medical drugs from the transmutation table.</description>
-    <baseCost>2000</baseCost>
+    <baseCost>500</baseCost>
     <techLevel>Ultra</techLevel>
     <tab>TransmutationTab</tab>
     <researchViewX>6.00</researchViewX>
@@ -411,7 +426,7 @@
     <techLevel>Spacer</techLevel>
     <tab>TransmutationTab</tab>
     <researchViewX>5.00</researchViewX>
-    <researchViewY>3.50</researchViewY>
+    <researchViewY>4.00</researchViewY>
     <prerequisites>
       <li>AntimatterAlchemy</li>
       <li>TransmuteMeal</li>
